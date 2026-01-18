@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Daily inspirational verses from the Book of Proverbs (ESV Bible)">
+  <meta name="theme-color" content="#7c3aed">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Daily Proverbs">
+  
+  <title>Daily Proverbs - Inspiration from ESV Bible</title>
+  
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <img src="icons/icon-192.png" alt="Daily Proverbs" class="logo-icon">
+        <span>Daily Proverbs</span>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">🌙</span>
+      </button>
+    </header>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+      <!-- Daily Verse View -->
+      <div id="dailyView" class="daily-container">
+        <div class="verse-container">
+          <div class="card">
+            <div class="verse-header">
+              <span class="verse-date" id="verseDate">Loading...</span>
+              <div class="verse-actions">
+                <button class="icon-btn" id="favoriteBtn" aria-label="Favorite" title="Add to favorites">
+                  ❤️
+                </button>
+                <button class="icon-btn" id="shareBtn" aria-label="Share" title="Share verse">
+                  📤
+                </button>
+              </div>
+            </div>
+            <div class="verse-reference" id="verseReference">Proverbs 1:1</div>
+            <div class="verse-text" id="verseText">Loading verse...</div>
+            <div class="verse-version">ESV</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Browse View -->
+      <div id="browseView" class="browse-container">
+        <div id="chapterSelect">
+          <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Select a Chapter</h2>
+          <div class="chapter-grid" id="chapterGrid"></div>
+        </div>
+        
+        <div id="verseSelect" class="hidden">
+          <button class="back-btn" id="backToChapters">
+            ← Back to Chapters
+          </button>
+          <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;" id="chapterTitle">Proverbs 1</h2>
+          <div class="verse-list" id="verseList"></div>
+        </div>
+      </div>
+
+      <!-- Favorites View -->
+      <div id="favoritesView" class="favorites-container">
+        <h2 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Favorite Verses</h2>
+        <div id="favoritesList" class="verse-list"></div>
+        <div id="emptyFavorites" class="empty-state hidden">
+          <div class="empty-state-icon">❤️</div>
+          <div class="empty-state-text">No favorite verses yet.<br>Tap the heart icon to save verses.</div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Navigation -->
+    <nav class="nav">
+      <button class="nav-btn active" data-view="daily" id="navDaily">
+        <span class="nav-btn-icon">📖</span>
+        <span>Today</span>
+      </button>
+      <button class="nav-btn" data-view="browse" id="navBrowse">
+        <span class="nav-btn-icon">📚</span>
+        <span>Browse</span>
+      </button>
+      <button class="nav-btn" data-view="favorites" id="navFavorites">
+        <span class="nav-btn-icon">❤️</span>
+        <span>Favorites</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

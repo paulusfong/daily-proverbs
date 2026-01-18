@@ -1,0 +1,303 @@
+{
+  "book": "Proverbs",
+  "version": "ESV",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": [
+        { "verse": 1, "text": "The proverbs of Solomon, son of David, king of Israel:" },
+        { "verse": 2, "text": "To know wisdom and instruction, to understand words of insight," },
+        { "verse": 3, "text": "to receive instruction in wise dealing, in righteousness, justice, and equity;" },
+        { "verse": 4, "text": "to give prudence to the simple, knowledge and discretion to the youth—" },
+        { "verse": 5, "text": "Let the wise hear and increase in learning, and the one who understands obtain guidance," },
+        { "verse": 6, "text": "to understand a proverb and a saying, the words of the wise and their riddles." },
+        { "verse": 7, "text": "The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction." },
+        { "verse": 8, "text": "Hear, my son, your father's instruction, and forsake not your mother's teaching," },
+        { "verse": 9, "text": "for they are a graceful garland for your head and pendants for your neck." },
+        { "verse": 10, "text": "My son, if sinners entice you, do not consent." },
+        { "verse": 33, "text": "but whoever listens to me will dwell secure and will be at ease, without dread of disaster." }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verses": [
+        { "verse": 1, "text": "My son, if you receive my words and treasure up my commandments with you," },
+        { "verse": 2, "text": "making your ear attentive to wisdom and inclining your heart to understanding;" },
+        { "verse": 3, "text": "yes, if you call out for insight and raise your voice for understanding," },
+        { "verse": 4, "text": "if you seek it like silver and search for it as for hidden treasures," },
+        { "verse": 5, "text": "then you will understand the fear of the Lord and find the knowledge of God." },
+        { "verse": 6, "text": "For the Lord gives wisdom; from his mouth come knowledge and understanding;" },
+        { "verse": 7, "text": "he stores up sound wisdom for the upright; he is a shield to those who walk in integrity," },
+        { "verse": 8, "text": "guarding the paths of justice and watching over the way of his saints." }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verses": [
+        { "verse": 1, "text": "My son, do not forget my teaching, but let your heart keep my commandments," },
+        { "verse": 2, "text": "for length of days and years of life and peace they will add to you." },
+        { "verse": 3, "text": "Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart." },
+        { "verse": 4, "text": "So you will find favor and good success in the sight of God and man." },
+        { "verse": 5, "text": "Trust in the Lord with all your heart, and do not lean on your own understanding." },
+        { "verse": 6, "text": "In all your ways acknowledge him, and he will make straight your paths." },
+        { "verse": 7, "text": "Be not wise in your own eyes; fear the Lord, and turn away from evil." },
+        { "verse": 8, "text": "It will be healing to your flesh and refreshment to your bones." }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verses": [
+        { "verse": 1, "text": "Hear, O sons, a father's instruction, and be attentive, that you may gain insight," },
+        { "verse": 2, "text": "for I give you good precepts; do not forsake my teaching." },
+        { "verse": 5, "text": "Get wisdom; get insight; do not forget, and do not turn away from the words of my mouth." },
+        { "verse": 6, "text": "Do not forsake her, and she will keep you; love her, and she will guard you." },
+        { "verse": 7, "text": "The beginning of wisdom is this: Get wisdom, and whatever you get, get insight." },
+        { "verse": 23, "text": "Keep your heart with all vigilance, for from it flow the springs of life." }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verses": [
+        { "verse": 1, "text": "My son, be attentive to my wisdom; incline your ear to my understanding," },
+        { "verse": 2, "text": "that you may keep discretion, and your lips may guard knowledge." },
+        { "verse": 21, "text": "For a man's ways are before the eyes of the Lord, and he ponders all his paths." }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verses": [
+        { "verse": 6, "text": "Go to the ant, O sluggard; consider her ways, and be wise." },
+        { "verse": 16, "text": "There are six things that the Lord hates, seven that are an abomination to him:" },
+        { "verse": 20, "text": "My son, keep your father's commandment, and forsake not your mother's teaching." },
+        { "verse": 23, "text": "For the commandment is a lamp and the teaching a light, and the reproofs of discipline are the way of life," }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verses": [
+        { "verse": 1, "text": "My son, keep my words and treasure up my commandments with you;" },
+        { "verse": 2, "text": "keep my commandments and live; keep my teaching as the apple of your eye;" },
+        { "verse": 3, "text": "bind them on your fingers; write them on the tablet of your heart." },
+        { "verse": 4, "text": "Say to wisdom, 'You are my sister,' and call insight your intimate friend," }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verses": [
+        { "verse": 1, "text": "Does not wisdom call? Does not understanding raise her voice?" },
+        { "verse": 10, "text": "Take my instruction instead of silver, and knowledge rather than choice gold," },
+        { "verse": 11, "text": "for wisdom is better than jewels, and all that you may desire cannot compare with her." },
+        { "verse": 17, "text": "I love those who love me, and those who seek me diligently find me." },
+        { "verse": 32, "text": "And now, O sons, listen to me: blessed are those who keep my ways." },
+        { "verse": 35, "text": "For whoever finds me finds life and obtains favor from the Lord," }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verses": [
+        { "verse": 9, "text": "Give instruction to a wise man, and he will be still wiser; teach a righteous man, and he will increase in learning." },
+        { "verse": 10, "text": "The fear of the Lord is the beginning of wisdom, and the knowledge of the Holy One is insight." },
+        { "verse": 11, "text": "For by me your days will be multiplied, and years will be added to your life." }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verses": [
+        { "verse": 1, "text": "The proverbs of Solomon. A wise son makes a glad father, but a foolish son is a sorrow to his mother." },
+        { "verse": 4, "text": "A slack hand causes poverty, but the hand of the diligent makes rich." },
+        { "verse": 12, "text": "Hatred stirs up strife, but love covers all offenses." },
+        { "verse": 19, "text": "When words are many, transgression is not lacking, but whoever restrains his lips is prudent." },
+        { "verse": 22, "text": "The blessing of the Lord makes rich, and he adds no sorrow with it." }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verses": [
+        { "verse": 2, "text": "When pride comes, then comes disgrace, but with the humble is wisdom." },
+        { "verse": 3, "text": "The integrity of the upright guides them, but the crookedness of the treacherous destroys them." },
+        { "verse": 25, "text": "Whoever brings blessing will be enriched, and one who waters will himself be watered." },
+        { "verse": 30, "text": "The fruit of the righteous is a tree of life, and whoever captures souls is wise." }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verses": [
+        { "verse": 1, "text": "Whoever loves discipline loves knowledge, but he who hates reproof is stupid." },
+        { "verse": 15, "text": "The way of a fool is right in his own eyes, but a wise man listens to advice." },
+        { "verse": 18, "text": "There is one whose rash words are like sword thrusts, but the tongue of the wise brings healing." },
+        { "verse": 25, "text": "Anxiety in a man's heart weighs him down, but a good word makes him glad." }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verses": [
+        { "verse": 3, "text": "Whoever guards his mouth preserves his life; he who opens wide his lips comes to ruin." },
+        { "verse": 10, "text": "By insolence comes nothing but strife, but with those who take advice is wisdom." },
+        { "verse": 12, "text": "Hope deferred makes the heart sick, but a desire fulfilled is a tree of life." },
+        { "verse": 20, "text": "Whoever walks with the wise becomes wise, but the companion of fools will suffer harm." }
+      ]
+    },
+    {
+      "chapter": 14,
+      "verses": [
+        { "verse": 12, "text": "There is a way that seems right to a man, but its end is the way to death." },
+        { "verse": 23, "text": "In all toil there is profit, but mere talk tends only to poverty." },
+        { "verse": 26, "text": "In the fear of the Lord one has strong confidence, and his children will have a refuge." },
+        { "verse": 29, "text": "Whoever is slow to anger has great understanding, but he who has a hasty temper exalts folly." }
+      ]
+    },
+    {
+      "chapter": 15,
+      "verses": [
+        { "verse": 1, "text": "A soft answer turns away wrath, but a harsh word stirs up anger." },
+        { "verse": 3, "text": "The eyes of the Lord are in every place, keeping watch on the evil and the good." },
+        { "verse": 13, "text": "A glad heart makes a cheerful face, but by sorrow of heart the spirit is crushed." },
+        { "verse": 22, "text": "Without counsel plans fail, but with many advisers they succeed." },
+        { "verse": 30, "text": "The light of the eyes rejoices the heart, and good news refreshes the bones." }
+      ]
+    },
+    {
+      "chapter": 16,
+      "verses": [
+        { "verse": 3, "text": "Commit your work to the Lord, and your plans will be established." },
+        { "verse": 9, "text": "The heart of man plans his way, but the Lord establishes his steps." },
+        { "verse": 18, "text": "Pride goes before destruction, and a haughty spirit before a fall." },
+        { "verse": 24, "text": "Gracious words are like a honeycomb, sweetness to the soul and health to the body." },
+        { "verse": 32, "text": "Whoever is slow to anger is better than the mighty, and he who rules his spirit than he who takes a city." }
+      ]
+    },
+    {
+      "chapter": 17,
+      "verses": [
+        { "verse": 9, "text": "Whoever covers an offense seeks love, but he who repeats a matter separates close friends." },
+        { "verse": 17, "text": "A friend loves at all times, and a brother is born for adversity." },
+        { "verse": 22, "text": "A joyful heart is good medicine, but a crushed spirit dries up the bones." },
+        { "verse": 27, "text": "Whoever restrains his words has knowledge, and he who has a cool spirit is a man of understanding." }
+      ]
+    },
+    {
+      "chapter": 18,
+      "verses": [
+        { "verse": 10, "text": "The name of the Lord is a strong tower; the righteous man runs into it and is safe." },
+        { "verse": 12, "text": "Before destruction a man's heart is haughty, but humility comes before honor." },
+        { "verse": 15, "text": "An intelligent heart acquires knowledge, and the ear of the wise seeks knowledge." },
+        { "verse": 21, "text": "Death and life are in the power of the tongue, and those who love it will eat its fruits." },
+        { "verse": 24, "text": "A man of many companions may come to ruin, but there is a friend who sticks closer than a brother." }
+      ]
+    },
+    {
+      "chapter": 19,
+      "verses": [
+        { "verse": 8, "text": "Whoever gets sense loves his own soul; he who keeps understanding will discover good." },
+        { "verse": 11, "text": "Good sense makes one slow to anger, and it is his glory to overlook an offense." },
+        { "verse": 17, "text": "Whoever is generous to the poor lends to the Lord, and he will repay him for his deed." },
+        { "verse": 21, "text": "Many are the plans in the mind of a man, but it is the purpose of the Lord that will stand." }
+      ]
+    },
+    {
+      "chapter": 20,
+      "verses": [
+        { "verse": 3, "text": "It is an honor for a man to keep aloof from strife, but every fool will be quarreling." },
+        { "verse": 7, "text": "The righteous who walks in his integrity—blessed are his children after him!" },
+        { "verse": 11, "text": "Even a child makes himself known by his acts, by whether his conduct is pure and upright." },
+        { "verse": 24, "text": "A man's steps are from the Lord; how then can man understand his way?" }
+      ]
+    },
+    {
+      "chapter": 21,
+      "verses": [
+        { "verse": 2, "text": "Every way of a man is right in his own eyes, but the Lord weighs the heart." },
+        { "verse": 3, "text": "To do righteousness and justice is more acceptable to the Lord than sacrifice." },
+        { "verse": 21, "text": "Whoever pursues righteousness and kindness will find life, righteousness, and honor." },
+        { "verse": 23, "text": "Whoever keeps his mouth and his tongue keeps himself out of trouble." }
+      ]
+    },
+    {
+      "chapter": 22,
+      "verses": [
+        { "verse": 1, "text": "A good name is to be chosen rather than great riches, and favor is better than silver or gold." },
+        { "verse": 4, "text": "The reward for humility and fear of the Lord is riches and honor and life." },
+        { "verse": 6, "text": "Train up a child in the way he should go; even when he is old he will not depart from it." },
+        { "verse": 29, "text": "Do you see a man skillful in his work? He will stand before kings; he will not stand before obscure men." }
+      ]
+    },
+    {
+      "chapter": 23,
+      "verses": [
+        { "verse": 4, "text": "Do not toil to acquire wealth; be discerning enough to desist." },
+        { "verse": 17, "text": "Let not your heart envy sinners, but continue in the fear of the Lord all the day." },
+        { "verse": 18, "text": "Surely there is a future, and your hope will not be cut off." },
+        { "verse": 26, "text": "My son, give me your heart, and let your eyes observe my ways." }
+      ]
+    },
+    {
+      "chapter": 24,
+      "verses": [
+        { "verse": 3, "text": "By wisdom a house is built, and by understanding it is established;" },
+        { "verse": 4, "text": "by knowledge the rooms are filled with all precious and pleasant riches." },
+        { "verse": 10, "text": "If you faint in the day of adversity, your strength is small." },
+        { "verse": 16, "text": "for the righteous falls seven times and rises again, but the wicked stumble in times of calamity." }
+      ]
+    },
+    {
+      "chapter": 25,
+      "verses": [
+        { "verse": 2, "text": "It is the glory of God to conceal things, but the glory of kings is to search things out." },
+        { "verse": 11, "text": "A word fitly spoken is like apples of gold in a setting of silver." },
+        { "verse": 21, "text": "If your enemy is hungry, give him bread to eat, and if he is thirsty, give him water to drink," },
+        { "verse": 28, "text": "A man without self-control is like a city broken into and left without walls." }
+      ]
+    },
+    {
+      "chapter": 26,
+      "verses": [
+        { "verse": 4, "text": "Answer not a fool according to his folly, lest you be like him yourself." },
+        { "verse": 11, "text": "Like a dog that returns to his vomit is a fool who repeats his folly." },
+        { "verse": 20, "text": "For lack of wood the fire goes out, and where there is no whisperer, quarreling ceases." }
+      ]
+    },
+    {
+      "chapter": 27,
+      "verses": [
+        { "verse": 1, "text": "Do not boast about tomorrow, for you do not know what a day may bring." },
+        { "verse": 2, "text": "Let another praise you, and not your own mouth; a stranger, and not your own lips." },
+        { "verse": 17, "text": "Iron sharpens iron, and one man sharpens another." },
+        { "verse": 19, "text": "As in water face reflects face, so the heart of man reflects the man." }
+      ]
+    },
+    {
+      "chapter": 28,
+      "verses": [
+        { "verse": 1, "text": "The wicked flee when no one pursues, but the righteous are bold as a lion." },
+        { "verse": 13, "text": "Whoever conceals his transgressions will not prosper, but he who confesses and forsakes them will obtain mercy." },
+        { "verse": 26, "text": "Whoever trusts in his own mind is a fool, but he who walks in wisdom will be delivered." }
+      ]
+    },
+    {
+      "chapter": 29,
+      "verses": [
+        { "verse": 11, "text": "A fool gives full vent to his spirit, but a wise man quietly holds it back." },
+        { "verse": 18, "text": "Where there is no prophetic vision the people cast off restraint, but blessed is he who keeps the law." },
+        { "verse": 25, "text": "The fear of man lays a snare, but whoever trusts in the Lord is safe." }
+      ]
+    },
+    {
+      "chapter": 30,
+      "verses": [
+        { "verse": 5, "text": "Every word of God proves true; he is a shield to those who take refuge in him." },
+        { "verse": 8, "text": "Remove far from me falsehood and lying; give me neither poverty nor riches; feed me with the food that is needful for me," },
+        { "verse": 9, "text": "lest I be full and deny you and say, 'Who is the Lord?' or lest I be poor and steal and profane the name of my God." }
+      ]
+    },
+    {
+      "chapter": 31,
+      "verses": [
+        { "verse": 8, "text": "Open your mouth for the mute, for the rights of all who are destitute." },
+        { "verse": 9, "text": "Open your mouth, judge righteously, defend the rights of the poor and needy." },
+        { "verse": 25, "text": "Strength and dignity are her clothing, and she laughs at the time to come." },
+        { "verse": 26, "text": "She opens her mouth with wisdom, and the teaching of kindness is on her tongue." },
+        { "verse": 30, "text": "Charm is deceitful, and beauty is vain, but a woman who fears the Lord is to be praised." }
+      ]
+    }
+  ]
+}
