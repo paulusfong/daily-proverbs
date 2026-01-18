@@ -4,16 +4,31 @@ let currentView = 'daily';
 let currentChapter = null;
 let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
 let theme = localStorage.getItem('theme') || 'light';
+let currentLanguage = localStorage.getItem('language') || 'en';
+
+// Helper function to get current translation
+function t(key) {
+    return getTranslation(currentLanguage, key);
+}
+
+// Get current language metadata
+function getCurrentLanguageMeta() {
+    return translations[currentLanguage];
+}
 
 // Initialize App
 async function init() {
     // Load Proverbs data
     try {
-        const response = await fetch('data/proverbs-esv.json');
+        const dataFile = `data/proverbs-${currentLanguage}.json`;
+        const response = await fetch(dataFile);
         proverbsData = await response.json();
 
         // Set theme
         applyTheme(theme);
+
+        // Update UI translations
+        updateUITranslations();
 
         // Display daily verse
         displayDailyVerse();
@@ -29,8 +44,88 @@ async function init() {
         }
     } catch (error) {
         console.error('Failed to load Proverbs data:', error);
-        document.getElementById('verseText').textContent = 'Failed to load verses. Please refresh the page.';
+        document.getElementById('verseText').textContent = t('errorLoading');
     }
+}
+
+// Change language
+async function changeLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('language', lang);
+
+    // Reload proverbs data
+    try {
+        const dataFile = `data/proverbs-${currentLanguage}.json`;
+        const response = await fetch(dataFile);
+        proverbsData = await response.json();
+
+        // Update all UI text
+        updateUITranslations();
+
+        // Refresh current view
+        if (currentView === 'daily') {
+            displayDailyVerse();
+        } else if (currentView === 'browse') {
+            if (currentChapter) {
+                displayChapterVerses(currentChapter);
+            } else {
+                displayChapters();
+            }
+        } else if (currentView === 'favorites') {
+            displayFavorites();
+        }
+    } catch (error) {
+        console.error('Failed to load language data:', error);
+        alert(t('errorLoading'));
+    }
+}
+
+// Update all UI translations
+function updateUITranslations() {
+    const langMeta = getCurrentLanguageMeta();
+
+    // Update header
+    document.querySelector('.logo span').textContent = t('appName');
+    document.getElementById('themeToggle').setAttribute('aria-label', t('toggleTheme'));
+    document.getElementById('themeToggle').setAttribute('title', t('toggleTheme'));
+
+    // Update navigation
+    document.querySelector('[data-view="daily"] span:last-child').textContent = t('navToday');
+    document.querySelector('[data-view="browse"] span:last-child').textContent = t('navBrowse');
+    document.querySelector('[data-view="favorites"] span:last-child').textContent = t('navFavorites');
+
+    // Update favorite button tooltips
+    const favoriteBtn = document.getElementById('favoriteBtn');
+    const isFavorite = favoriteBtn.classList.contains('active');
+    favoriteBtn.setAttribute('title', isFavorite ? t('removeFromFavorites') : t('addToFavorites'));
+
+    // Update share button
+    document.getElementById('shareBtn').setAttribute('title', t('shareVerse'));
+
+    // Update browse view
+    const chapterSelectHeader = document.querySelector('#chapterSelect h2');
+    if (chapterSelectHeader) {
+        chapterSelectHeader.textContent = t('selectChapter');
+    }
+
+    const backBtn = document.getElementById('backToChapters');
+    if (backBtn) {
+        backBtn.textContent = t('backToChapters');
+    }
+
+    // Update favorites view
+    const favoritesHeader = document.querySelector('#favoritesView > h2');
+    if (favoritesHeader) {
+        favoritesHeader.textContent = t('favoriteVerses');
+    }
+
+    const emptyStateText = document.querySelector('.empty-state-text');
+    if (emptyStateText) {
+        emptyStateText.innerHTML = `${t('noFavorites')}<br>${t('tapHeart')}`;
+    }
+
+    // Update HTML lang attribute
+    document.documentElement.setAttribute('lang', langMeta.code);
 }
 
 // Get today's verse based on day of month
@@ -57,16 +152,15 @@ function getTodayVerse() {
 function displayDailyVerse() {
     const todayVerse = getTodayVerse();
     const today = new Date();
+    const langMeta = getCurrentLanguageMeta();
 
-    document.getElementById('verseDate').textContent = today.toLocaleDateString('en-US', {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric'
-    });
+    document.getElementById('verseDate').textContent = today.toLocaleDateString(langMeta.locale, langMeta.ui.dateOptions);
 
-    document.getElementById('verseReference').textContent = `Proverbs ${todayVerse.chapter}:${todayVerse.verse}`;
+    document.getElementById('verseReference').textContent = `${t('proverbsChapter')} ${todayVerse.chapter}:${todayVerse.verse}`;
     document.getElementById('verseText').textContent = todayVerse.text;
+
+    // Update Bible version
+    document.querySelector('.verse-version').textContent = langMeta.bibleVersion;
 
     // Update favorite button state
     updateFavoriteButton(todayVerse);
@@ -116,12 +210,13 @@ function toggleFavorite() {
 async function shareVerse() {
     const reference = document.getElementById('verseReference').textContent;
     const text = document.getElementById('verseText').textContent;
-    const shareText = `${text}\n\n— ${reference} (ESV)`;
+    const langMeta = getCurrentLanguageMeta();
+    const shareText = `${text}\n\n— ${reference} (${langMeta.bibleVersion})`;
 
     if (navigator.share) {
         try {
             await navigator.share({
-                title: 'Daily Proverbs',
+                title: t('appName'),
                 text: shareText
             });
         } catch (err) {
@@ -137,9 +232,9 @@ async function shareVerse() {
 // Copy to clipboard
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-        alert('Verse copied to clipboard!');
+        alert(t('verseCopied'));
     }).catch(() => {
-        alert('Failed to copy verse');
+        alert(t('copyFailed'));
     });
 }
 
@@ -208,7 +303,7 @@ function displayChapterVerses(chapterNum) {
     currentChapter = chapterNum;
     const chapter = proverbsData.chapters.find(ch => ch.chapter === chapterNum);
 
-    document.getElementById('chapterTitle').textContent = `Proverbs ${chapterNum}`;
+    document.getElementById('chapterTitle').textContent = `${t('proverbsChapter')} ${chapterNum}`;
     document.getElementById('chapterSelect').classList.add('hidden');
     document.getElementById('verseSelect').classList.remove('hidden');
 
@@ -219,12 +314,12 @@ function displayChapterVerses(chapterNum) {
         const item = document.createElement('div');
         item.className = 'verse-item';
         item.innerHTML = `
-      <div class="verse-item-ref">Proverbs ${chapterNum}:${verse.verse}</div>
+      <div class="verse-item-ref">${t('proverbsChapter')} ${chapterNum}:${verse.verse}</div>
       <div class="verse-item-text">${verse.text}</div>
     `;
         item.onclick = () => {
             // Show verse in daily view
-            document.getElementById('verseReference').textContent = `Proverbs ${chapterNum}:${verse.verse}`;
+            document.getElementById('verseReference').textContent = `${t('proverbsChapter')} ${chapterNum}:${verse.verse}`;
             document.getElementById('verseText').textContent = verse.text;
             updateFavoriteButton({ chapter: chapterNum, verse: verse.verse });
             switchView('daily');
@@ -249,12 +344,12 @@ function displayFavorites() {
             const item = document.createElement('div');
             item.className = 'verse-item';
             item.innerHTML = `
-        <div class="verse-item-ref">Proverbs ${fav.chapter}:${fav.verse}</div>
+        <div class="verse-item-ref">${t('proverbsChapter')} ${fav.chapter}:${fav.verse}</div>
         <div class="verse-item-text">${fav.text}</div>
       `;
             item.onclick = () => {
                 // Show verse in daily view
-                document.getElementById('verseReference').textContent = `Proverbs ${fav.chapter}:${fav.verse}`;
+                document.getElementById('verseReference').textContent = `${t('proverbsChapter')} ${fav.chapter}:${fav.verse}`;
                 document.getElementById('verseText').textContent = fav.text;
                 updateFavoriteButton(fav);
                 switchView('daily');
@@ -266,6 +361,13 @@ function displayFavorites() {
 
 // Setup event listeners
 function setupEventListeners() {
+    // Language selector
+    const languageSelector = document.getElementById('languageSelector');
+    languageSelector.value = currentLanguage;
+    languageSelector.addEventListener('change', (e) => {
+        changeLanguage(e.target.value);
+    });
+
     // Theme toggle
     document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 
