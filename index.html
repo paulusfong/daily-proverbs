@@ -24,9 +24,17 @@
         <img src="icons/icon-192.png" alt="Daily Proverbs" class="logo-icon">
         <span>Daily Proverbs</span>
       </div>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <span id="themeIcon">🌙</span>
-      </button>
+      <div class="header-actions">
+        <select class="language-selector" id="languageSelector" aria-label="Select language">
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+        </select>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
     </header>
 
     <!-- Main Content -->
@@ -97,6 +105,7 @@
     </nav>
   </div>
 
+  <script src="translations.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

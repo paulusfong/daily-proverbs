@@ -1,0 +1,204 @@
+{
+  "book": "Proverbes",
+  "version": "LSG",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": [
+        { "verse": 1, "text": "Proverbes de Salomon, fils de David, roi d'Israël," },
+        { "verse": 2, "text": "Pour connaître la sagesse et l'instruction, Pour comprendre les paroles de l'intelligence;" },
+        { "verse": 7, "text": "La crainte de l'Éternel est le commencement de la science; Les insensés méprisent la sagesse et l'instruction." }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verses": [
+        { "verse": 1, "text": "Mon fils, si tu reçois mes paroles, Et si tu gardes avec toi mes préceptes," },
+        { "verse": 6, "text": "Car l'Éternel donne la sagesse; De sa bouche sortent la connaissance et l'intelligence;" }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verses": [
+        { "verse": 5, "text": "Confie-toi en l'Éternel de tout ton coeur, Et ne t'appuie pas sur ta sagesse;" },
+        { "verse": 6, "text": "Reconnais-le dans toutes tes voies, Et il aplanira tes sentiers." }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verses": [
+        { "verse": 7, "text": "Voici le commencement de la sagesse: Acquiers la sagesse, Et avec tout ce que tu possèdes acquiers l'intelligence." }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verses": [
+        { "verse": 1, "text": "Mon fils, sois attentif à ma sagesse, Prête l'oreille à mon intelligence," }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verses": [
+        { "verse": 6, "text": "Va vers la fourmi, paresseux; Considère ses voies, et deviens sage." }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verses": [
+        { "verse": 1, "text": "Mon fils, retiens mes paroles, Et garde avec toi mes préceptes." }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verses": [
+        { "verse": 1, "text": "La sagesse ne crie-t-elle pas? L'intelligence n'élève-t-elle pas sa voix?" }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verses": [
+        { "verse": 10, "text": "Le commencement de la sagesse, c'est la crainte de l'Éternel; Et la science des saints, c'est l'intelligence." }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verses": [
+        { "verse": 1, "text": "Un fils sage fait la joie d'un père, Et un fils insensé le chagrin de sa mère." }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verses": [
+        { "verse": 2, "text": "Quand vient l'orgueil, vient aussi l'ignominie; Mais la sagesse est avec les humbles." }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verses": [
+        { "verse": 15, "text": "La voie de l'insensé est droite à ses yeux, Mais celui qui écoute les conseils est sage." }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verses": [
+        { "verse": 20, "text": "Celui qui fréquente les sages devient sage, Mais celui qui se plaît avec les insensés s'en trouve mal." }
+      ]
+    },
+    {
+      "chapter": 14,
+      "verses": [
+        { "verse": 12, "text": "Telle voie paraît droite à un homme, Mais son issue, c'est la voie de la mort." }
+      ]
+    },
+    {
+      "chapter": 15,
+      "verses": [
+        { "verse": 1, "text": "Une réponse douce calme la fureur, Mais une parole dure excite la colère." }
+      ]
+    },
+    {
+      "chapter": 16,
+      "verses": [
+        { "verse": 3, "text": "Recommande à l'Éternel tes oeuvres, Et tes projets réussiront." },
+        { "verse": 9, "text": "Le coeur de l'homme médite sa voie, Mais c'est l'Éternel qui dirige ses pas." }
+      ]
+    },
+    {
+      "chapter": 17,
+      "verses": [
+        { "verse": 17, "text": "L'ami aime en tout temps, Et dans le malheur il se montre un frère." },
+        { "verse": 22, "text": "Un coeur joyeux est un bon remède, Mais un esprit abattu dessèche les os." }
+      ]
+    },
+    {
+      "chapter": 18,
+      "verses": [
+        { "verse": 10, "text": "Le nom de l'Éternel est une tour forte; Le juste s'y réfugie, et se trouve en sûreté." }
+      ]
+    },
+    {
+      "chapter": 19,
+      "verses": [
+        { "verse": 21, "text": "Il y a dans le coeur de l'homme beaucoup de projets, Mais c'est le dessein de l'Éternel qui s'accomplit." }
+      ]
+    },
+    {
+      "chapter": 20,
+      "verses": [
+        { "verse": 7, "text": "Le juste marche dans son intégrité; Heureux ses enfants après lui!" }
+      ]
+    },
+    {
+      "chapter": 21,
+      "verses": [
+        { "verse": 3, "text": "La pratique de la justice et de l'équité, Voilà ce que l'Éternel préfère aux sacrifices." }
+      ]
+    },
+    {
+      "chapter": 22,
+      "verses": [
+        { "verse": 1, "text": "La réputation est préférable à de grandes richesses, Et la grâce vaut mieux que l'argent et que l'or." },
+        { "verse": 6, "text": "Instruis l'enfant selon la voie qu'il doit suivre; Et quand il sera vieux, il ne s'en détournera pas." }
+      ]
+    },
+    {
+      "chapter": 23,
+      "verses": [
+        { "verse": 17, "text": "Que ton coeur n'envie point les pécheurs, Mais qu'il ait toujours la crainte de l'Éternel;" }
+      ]
+    },
+    {
+      "chapter": 24,
+      "verses": [
+        { "verse": 3, "text": "C'est par la sagesse qu'une maison s'élève, Et par l'intelligence qu'elle s'affermit;" },
+        { "verse": 16, "text": "Car sept fois le juste tombe, et il se relève, Mais les méchants sont précipités dans le malheur." }
+      ]
+    },
+    {
+      "chapter": 25,
+      "verses": [
+        { "verse": 11, "text": "Comme des pommes d'or sur des ciselures d'argent, Ainsi est une parole dite à propos." }
+      ]
+    },
+    {
+      "chapter": 26,
+      "verses": [
+        { "verse": 20, "text": "Faute de bois, le feu s'éteint; Et quand il n'y a point de rapporteur, la querelle s'apaise." }
+      ]
+    },
+    {
+      "chapter": 27,
+      "verses": [
+        { "verse": 1, "text": "Ne te vante pas du lendemain, Car tu ne sais pas ce qu'un jour peut enfanter." },
+        { "verse": 17, "text": "Comme le fer aiguise le fer, Ainsi un homme excite la colère d'un homme." }
+      ]
+    },
+    {
+      "chapter": 28,
+      "verses": [
+        { "verse": 1, "text": "Le méchant prend la fuite sans qu'on le poursuive, Le juste a de l'assurance comme un jeune lion." },
+        { "verse": 13, "text": "Celui qui cache ses transgressions ne prospère point, Mais celui qui les avoue et les délaisse obtient miséricorde." }
+      ]
+    },
+    {
+      "chapter": 29,
+      "verses": [
+        { "verse": 18, "text": "Quand il n'y a pas de révélation, le peuple est sans frein; Heureux s'il observe la loi!" },
+        { "verse": 25, "text": "La crainte des hommes tend un piège, Mais celui qui se confie en l'Éternel est protégé." }
+      ]
+    },
+    {
+      "chapter": 30,
+      "verses": [
+        { "verse": 5, "text": "Toute parole de Dieu est éprouvée. Il est un bouclier pour ceux qui cherchent en lui un refuge." }
+      ]
+    },
+    {
+      "chapter": 31,
+      "verses": [
+        { "verse": 25, "text": "Elle est revêtue de force et de gloire, Et elle se rit de l'avenir." },
+        { "verse": 30, "text": "La grâce est trompeuse, et la beauté est vaine; La femme qui craint l'Éternel est celle qui sera louée." }
+      ]
+    }
+  ]
+}

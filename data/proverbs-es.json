@@ -1,0 +1,204 @@
+{
+  "book": "Proverbios",
+  "version": "RVR1960",
+  "chapters": [
+    {
+      "chapter": 1,
+      "verses": [
+        { "verse": 1, "text": "Los proverbios de Salomón, hijo de David, rey de Israel:" },
+        { "verse": 2, "text": "Para entender sabiduría e instrucción, Para conocer razones prudentes," },
+        { "verse": 7, "text": "El principio de la sabiduría es el temor de Jehová; Los insensatos desprecian la sabiduría y la enseñanza." }
+      ]
+    },
+    {
+      "chapter": 2,
+      "verses": [
+        { "verse": 1, "text": "Hijo mío, si recibieres mis palabras, Y mis mandamientos guardares dentro de ti," },
+        { "verse": 6, "text": "Porque Jehová da la sabiduría, Y de su boca viene el conocimiento y la inteligencia." }
+      ]
+    },
+    {
+      "chapter": 3,
+      "verses": [
+        { "verse": 5, "text": "Fíate de Jehová de todo tu corazón, Y no te apoyes en tu propia prudencia." },
+        { "verse": 6, "text": "Reconócelo en todos tus caminos, Y él enderezará tus veredas." }
+      ]
+    },
+    {
+      "chapter": 4,
+      "verses": [
+        { "verse": 7, "text": "Sabiduría ante todo; adquiere sabiduría; Y sobre todas tus posesiones adquiere inteligencia." }
+      ]
+    },
+    {
+      "chapter": 5,
+      "verses": [
+        { "verse": 1, "text": "Hijo mío, está atento a mi sabiduría, Y a mi inteligencia inclina tu oído," }
+      ]
+    },
+    {
+      "chapter": 6,
+      "verses": [
+        { "verse": 6, "text": "Ve a la hormiga, oh perezoso, Mira sus caminos, y sé sabio;" }
+      ]
+    },
+    {
+      "chapter": 7,
+      "verses": [
+        { "verse": 1, "text": "Hijo mío, guarda mis razones, Y atesora contigo mis mandamientos." }
+      ]
+    },
+    {
+      "chapter": 8,
+      "verses": [
+        { "verse": 1, "text": "¿No clama la sabiduría, Y da su voz la inteligencia?" }
+      ]
+    },
+    {
+      "chapter": 9,
+      "verses": [
+        { "verse": 10, "text": "El temor de Jehová es el principio de la sabiduría, Y el conocimiento del Santísimo es la inteligencia." }
+      ]
+    },
+    {
+      "chapter": 10,
+      "verses": [
+        { "verse": 1, "text": "El hijo sabio alegra al padre, Pero el hijo necio es tristeza de su madre." }
+      ]
+    },
+    {
+      "chapter": 11,
+      "verses": [
+        { "verse": 2, "text": "Cuando viene la soberbia, viene también la deshonra; Mas con los humildes está la sabiduría." }
+      ]
+    },
+    {
+      "chapter": 12,
+      "verses": [
+        { "verse": 15, "text": "El camino del necio es derecho en su opinión; Mas el que obedece al consejo es sabio." }
+      ]
+    },
+    {
+      "chapter": 13,
+      "verses": [
+        { "verse": 20, "text": "El que anda con sabios, sabio será; Mas el que se junta con necios será quebrantado." }
+      ]
+    },
+    {
+      "chapter": 14,
+      "verses": [
+        { "verse": 12, "text": "Hay camino que al hombre le parece derecho; Pero su fin es camino de muerte." }
+      ]
+    },
+    {
+      "chapter": 15,
+      "verses": [
+        { "verse": 1, "text": "La blanda respuesta quita la ira; Mas la palabra áspera hace subir el furor." }
+      ]
+    },
+    {
+      "chapter": 16,
+      "verses": [
+        { "verse": 3, "text": "Encomienda a Jehová tus obras, Y tus pensamientos serán afirmados." },
+        { "verse": 9, "text": "El corazón del hombre piensa su camino; Mas Jehová endereza sus pasos." }
+      ]
+    },
+    {
+      "chapter": 17,
+      "verses": [
+        { "verse": 17, "text": "En todo tiempo ama el amigo, Y es como un hermano en tiempo de angustia." },
+        { "verse": 22, "text": "El corazón alegre constituye buen remedio; Mas el espíritu triste seca los huesos." }
+      ]
+    },
+    {
+      "chapter": 18,
+      "verses": [
+        { "verse": 10, "text": "Torre fuerte es el nombre de Jehová; A él correrá el justo, y será levantado." }
+      ]
+    },
+    {
+      "chapter": 19,
+      "verses": [
+        { "verse": 21, "text": "Muchos pensamientos hay en el corazón del hombre; Mas el consejo de Jehová permanecerá." }
+      ]
+    },
+    {
+      "chapter": 20,
+      "verses": [
+        { "verse": 7, "text": "Camina en su integridad el justo; Sus hijos son dichosos después de él." }
+      ]
+    },
+    {
+      "chapter": 21,
+      "verses": [
+        { "verse": 3, "text": "Hacer justicia y juicio es a Jehová más agradable que sacrificio." }
+      ]
+    },
+    {
+      "chapter": 22,
+      "verses": [
+        { "verse": 1, "text": "De más estima es el buen nombre que las muchas riquezas, Y la buena fama más que la plata y el oro." },
+        { "verse": 6, "text": "Instruye al niño en su camino, Y aun cuando fuere viejo no se apartará de él." }
+      ]
+    },
+    {
+      "chapter": 23,
+      "verses": [
+        { "verse": 17, "text": "No tenga tu corazón envidia de los pecadores, Antes persevera en el temor de Jehová todo el tiempo;" }
+      ]
+    },
+    {
+      "chapter": 24,
+      "verses": [
+        { "verse": 3, "text": "Con sabiduría se edificará la casa, Y con prudencia se afirmará;" },
+        { "verse": 16, "text": "Porque siete veces cae el justo, y vuelve a levantarse; Mas los impíos caerán en el mal." }
+      ]
+    },
+    {
+      "chapter": 25,
+      "verses": [
+        { "verse": 11, "text": "Manzana de oro con figuras de plata Es la palabra dicha como conviene." }
+      ]
+    },
+    {
+      "chapter": 26,
+      "verses": [
+        { "verse": 20, "text": "Sin leña se apaga el fuego, Y donde no hay chismoso, cesa la contienda." }
+      ]
+    },
+    {
+      "chapter": 27,
+      "verses": [
+        { "verse": 1, "text": "No te jactes del día de mañana; Porque no sabes qué dará de sí el día." },
+        { "verse": 17, "text": "Hierro con hierro se aguza; Y así el hombre aguza el rostro de su amigo." }
+      ]
+    },
+    {
+      "chapter": 28,
+      "verses": [
+        { "verse": 1, "text": "Huye el impío sin que nadie lo persiga; Mas el justo está confiado como un león." },
+        { "verse": 13, "text": "El que encubre sus pecados no prosperará; Mas el que los confiesa y se aparta alcanzará misericordia." }
+      ]
+    },
+    {
+      "chapter": 29,
+      "verses": [
+        { "verse": 18, "text": "Sin profecía el pueblo se desenfrena; Mas el que guarda la ley es bienaventurado." },
+        { "verse": 25, "text": "El temor del hombre pondrá lazo; Mas el que confía en Jehová será exaltado." }
+      ]
+    },
+    {
+      "chapter": 30,
+      "verses": [
+        { "verse": 5, "text": "Toda palabra de Dios es limpia; El es escudo a los que en él esperan." }
+      ]
+    },
+    {
+      "chapter": 31,
+      "verses": [
+        { "verse": 25, "text": "Fuerza y honor son su vestidura; Y se ríe de lo por venir." },
+        { "verse": 30, "text": "Engañosa es la gracia, y vana la hermosura; La mujer que teme a Jehová, ésa será alabada." }
+      ]
+    }
+  ]
+}
