@@ -716,6 +716,113 @@ html[lang="zh-TW"] body {
   }
 }
 
+/* Tablet */
+@media (min-width: 720px) {
+  .container {
+    max-width: 640px;
+    padding-top: var(--spacing-lg);
+  }
+
+  .verse-card {
+    padding: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .verse-text {
+    font-size: clamp(1.35rem, 2vw, 1.65rem);
+    line-height: 1.8;
+  }
+
+  .chapter-grid {
+    grid-template-columns: repeat(auto-fill, minmax(72px, 1fr));
+    gap: 0.75rem;
+  }
+}
+
+/* Desktop — side navigation + reading column */
+@media (min-width: 1024px) {
+  body {
+    display: block;
+  }
+
+  .container {
+    max-width: 1080px;
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "side header"
+      "side main";
+    gap: 0 var(--spacing-xl);
+    padding: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl);
+    min-height: 100vh;
+    min-height: 100dvh;
+    align-content: start;
+  }
+
+  .header {
+    grid-area: header;
+    padding: 0 0 var(--spacing-lg);
+    margin: 0;
+  }
+
+  main#mainContent {
+    grid-area: main;
+    min-width: 0;
+  }
+
+  .nav {
+    grid-area: side;
+    position: sticky;
+    top: var(--spacing-xl);
+    left: auto;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 0.35rem;
+    border-radius: var(--radius-xl);
+  }
+
+  .nav-btn {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    min-height: 48px;
+    padding: 0.75rem 0.9rem;
+    font-size: var(--text-sm);
+    width: 100%;
+  }
+
+  .nav-btn-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .daily-container.active {
+    display: flex;
+    align-items: center;
+    min-height: min(70vh, 640px);
+  }
+
+  .verse-container {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+  }
+
+  .browse-container.active,
+  .favorites-container.active {
+    max-width: 720px;
+  }
+
+  .toast {
+    bottom: var(--spacing-xl);
+  }
+}
+
 /* Print */
 @media print {
   .header-actions,

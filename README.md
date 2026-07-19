@@ -5,6 +5,8 @@ A lightweight Progressive Web App that shows a daily verse from the Book of Prov
 **Live site (GitHub Pages):** [https://paulusfong.github.io/daily-proverbs/](https://paulusfong.github.io/daily-proverbs/)  
 **Source:** [github.com/paulusfong/daily-proverbs](https://github.com/paulusfong/daily-proverbs)
 
+Deploy notes (Vercel headers, QA script): see [DEPLOY.md](./DEPLOY.md).
+
 ## Features
 
 - **Daily verse** — Chapter follows the day of the month (1–31); verse is **stable for that calendar day** (and language), not reshuffled on every refresh
@@ -54,6 +56,10 @@ node --test tests/app-logic.test.js
 python3 -m http.server 8080 &
 ./run-all-tests.sh
 node test-languages-simple.js
+
+# Production / live-site smoke
+./scripts/qa-live.sh
+./scripts/qa-live.sh https://paulusfong.github.io/daily-proverbs
 ```
 
 CI (GitHub Actions) runs syntax checks, unit tests, JSON validation, and smoke tests on push/PR to `main`.

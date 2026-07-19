@@ -1,5 +1,5 @@
 // Cache name: bump on every release that changes precached assets.
-const CACHE_NAME = 'daily-proverbs-v7';
+const CACHE_NAME = 'daily-proverbs-v8';
 
 // Paths relative to the service worker scope (works on domain root and
 // GitHub Pages project sites like /daily-proverbs/).
