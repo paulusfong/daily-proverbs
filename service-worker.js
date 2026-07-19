@@ -1,10 +1,14 @@
-const CACHE_NAME = 'daily-proverbs-v1';
+const CACHE_NAME = 'daily-proverbs-v2';
 const urlsToCache = [
     '/',
     '/index.html',
     '/styles.css',
     '/app.js',
-    '/data/proverbs-esv.json',
+    '/translations.js',
+    '/data/proverbs-en.json',
+    '/data/proverbs-zh.json',
+    '/data/proverbs-es.json',
+    '/data/proverbs-fr.json',
     '/icons/icon-192.png',
     '/icons/icon-512.png',
     '/manifest.json'
