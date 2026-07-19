@@ -12,7 +12,7 @@ const AppLogic = require('../app-logic.js');
 
 const sampleData = {
     book: 'Proverbs',
-    version: 'ESV',
+    version: 'WEB',
     chapters: [
         {
             chapter: 1,
@@ -46,7 +46,7 @@ function buildMonthData() {
             ]
         });
     }
-    return { book: 'Proverbs', version: 'ESV', chapters };
+    return { book: 'Proverbs', version: 'WEB', chapters };
 }
 
 describe('stableDaySeed', () => {

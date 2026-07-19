@@ -184,6 +184,11 @@ function updateUITranslations() {
     document.getElementById('shareBtn').setAttribute('title', t('shareVerse'));
     document.getElementById('shareBtn').setAttribute('aria-label', t('shareVerse'));
 
+    const scriptureNotice = document.getElementById('scriptureNotice');
+    if (scriptureNotice) {
+        scriptureNotice.textContent = t('scriptureNotice');
+    }
+
     const chapterSelectHeader = document.querySelector('#chapterSelect h2');
     if (chapterSelectHeader) {
         chapterSelectHeader.textContent = t('selectChapter');

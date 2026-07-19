@@ -8,7 +8,7 @@ const translations = {
         nativeName: 'English',
         direction: 'ltr',
         locale: 'en-US',
-        bibleVersion: 'ESV',
+        bibleVersion: 'WEB',
         ui: {
             // Header
             appName: 'Daily Proverbs',
@@ -40,6 +40,10 @@ const translations = {
             favoriteVerses: 'Favorite Verses',
             noFavorites: 'No favorite verses yet.',
             tapHeart: 'Tap the heart icon to save verses.',
+
+            // Legal
+            scriptureNotice: 'English Scripture: World English Bible (WEB), public domain. Other languages: see About.',
+            aboutTitle: 'About',
 
             // Share
             verseCopied: 'Verse copied to clipboard!',
@@ -94,6 +98,10 @@ const translations = {
             noFavorites: '还没有收藏的经文。',
             tapHeart: '点击心形图标保存经文。',
 
+            // Legal
+            scriptureNotice: '英文经文：World English Bible（WEB），公有领域。其他语言译本见关于说明。',
+            aboutTitle: '关于',
+
             // Share
             verseCopied: '经文已复制到剪贴板！',
             copyFailed: '复制失败',
@@ -147,6 +155,10 @@ const translations = {
             noFavorites: 'Aún no hay versículos favoritos.',
             tapHeart: 'Toca el ícono del corazón para guardar versículos.',
 
+            // Legal
+            scriptureNotice: 'Escritura en inglés: World English Bible (WEB), dominio público. Otros idiomas: ver Acerca de.',
+            aboutTitle: 'Acerca de',
+
             // Share
             verseCopied: '¡Versículo copiado al portapapeles!',
             copyFailed: 'Error al copiar versículo',
@@ -199,6 +211,10 @@ const translations = {
             favoriteVerses: 'Versets Favoris',
             noFavorites: 'Aucun verset favori pour le moment.',
             tapHeart: "Appuyez sur l'icône du cœur pour enregistrer des versets.",
+
+            // Legal
+            scriptureNotice: 'Écriture en anglais : World English Bible (WEB), domaine public. Autres langues : voir À propos.',
+            aboutTitle: 'À propos',
 
             // Share
             verseCopied: 'Verset copié dans le presse-papiers !',

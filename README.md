@@ -22,14 +22,14 @@ Deploy notes and live QA: see [DEPLOY.md](./DEPLOY.md).
 
 | Language | Version in app | Notes |
 |----------|----------------|--------|
-| English (`en`) | **ESV** | Curated selection (~142 verses) |
+| English (`en`) | **WEB** (World English Bible) | Public domain; curated selection (~142 verses) |
 | Chinese (`zh`) | **和合本** (CUV, simplified) | Same verse references as English |
 | Spanish (`es`) | **Reina-Valera (RVR)** | Same verse references as English |
 | French (`fr`) | **LSG** (Louis Segond family) | Same verse references as English |
 
 Browse mode shows **selected verses**, not the full book text. A note in the UI makes that clear.
 
-> **Licensing:** Bible translations have their own terms. ESV in particular is copyrighted—use and distribution must comply with the publisher’s guidelines. Chinese CUV text used for expansion is from public-domain open-Bible sources; verify rights for your deployment region and any commercial use.
+> **Licensing:** Application source code is MIT. **Scripture text is not covered by the MIT license.** English uses the **World English Bible (WEB)**, which is public domain. Chinese CUV, Spanish RVR, and French LSG editions still have their own terms—verify rights for your deployment region and any commercial use. Do not relicense Bible text under Creative Commons as “your” content.
 
 ## Stack
 
@@ -131,4 +131,6 @@ The service worker and manifest use **scope-relative** paths so the app works bo
 
 ## License
 
-Application code is available under the MIT License (see project terms as published). **Bible text is not covered by that license**—follow each translation’s copyright rules.
+- **Application code:** MIT (as published for this project).  
+- **English Scripture (WEB):** Public domain (World English Bible).  
+- **Other Scripture languages:** Not MIT; follow each translation’s terms (CUV / RVR / LSG, etc.).
