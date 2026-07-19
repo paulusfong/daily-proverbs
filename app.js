@@ -1,3 +1,6 @@
+// Constants
+const VALID_LANGUAGES = ['en', 'zh', 'es', 'fr'];
+
 // App State
 let proverbsData = null;
 let currentView = 'daily';
@@ -5,6 +8,13 @@ let currentChapter = null;
 let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
 let theme = localStorage.getItem('theme') || 'light';
 let currentLanguage = localStorage.getItem('language') || 'en';
+
+// Validate stored language on startup
+if (!VALID_LANGUAGES.includes(currentLanguage)) {
+    console.warn('Invalid language in localStorage:', currentLanguage);
+    currentLanguage = 'en';
+    localStorage.setItem('language', 'en');
+}
 
 // Helper function to get current translation
 function t(key) {
@@ -50,6 +60,12 @@ async function init() {
 
 // Change language
 async function changeLanguage(lang) {
+    // Validate language input
+    if (!VALID_LANGUAGES.includes(lang)) {
+        console.warn('Invalid language attempted:', lang);
+        return; // Ignore invalid language
+    }
+
     currentLanguage = lang;
     localStorage.setItem('language', lang);
 
