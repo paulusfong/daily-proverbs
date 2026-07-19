@@ -1,8 +1,9 @@
 {
-    "name": "Daily Proverbs - ESV Bible",
+    "name": "Daily Proverbs",
     "short_name": "Daily Proverbs",
-    "description": "Daily inspirational verses from the Book of Proverbs (ESV Bible)",
-    "start_url": "/",
+    "description": "Daily inspirational verses from the Book of Proverbs",
+    "start_url": "./",
+    "scope": "./",
     "display": "standalone",
     "background_color": "#fafafa",
     "theme_color": "#7c3aed",

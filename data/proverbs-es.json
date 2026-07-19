@@ -1,203 +1,728 @@
 {
   "book": "Proverbios",
-  "version": "RVR1960",
+  "version": "RVR",
   "chapters": [
     {
       "chapter": 1,
       "verses": [
-        { "verse": 1, "text": "Los proverbios de Salomón, hijo de David, rey de Israel:" },
-        { "verse": 2, "text": "Para entender sabiduría e instrucción, Para conocer razones prudentes," },
-        { "verse": 7, "text": "El principio de la sabiduría es el temor de Jehová; Los insensatos desprecian la sabiduría y la enseñanza." }
+        {
+          "verse": 1,
+          "text": "LOS proverbios de Salomón, hijo de David, rey de Israel:"
+        },
+        {
+          "verse": 2,
+          "text": "Para entender sabiduría y doctrina; Para conocer las razones prudentes;"
+        },
+        {
+          "verse": 3,
+          "text": "Para recibir el consejo de prudencia, Justicia, y juicio y equidad;"
+        },
+        {
+          "verse": 4,
+          "text": "Para dar sagacidad á los simples, Y á los jóvenes inteligencia y cordura."
+        },
+        {
+          "verse": 5,
+          "text": "Oirá el sabio, y aumentará el saber; Y el entendido adquirirá consejo;"
+        },
+        {
+          "verse": 6,
+          "text": "Para entender parábola y declaración; Palabras de sabios, y sus dichos oscuros."
+        },
+        {
+          "verse": 7,
+          "text": "El principio de la sabiduría es el temor de Jehová: Los insensatos desprecian la sabiduría y la enseñanza."
+        },
+        {
+          "verse": 8,
+          "text": "Oye, hijo mío, la doctrina de tu padre, Y no desprecies la dirección de tu madre:"
+        },
+        {
+          "verse": 9,
+          "text": "Porque adorno de gracia serán á tu cabeza, Y collares á tu cuello."
+        },
+        {
+          "verse": 10,
+          "text": "Hijo mío, si los pecadores te quisieren engañar, No consientas."
+        },
+        {
+          "verse": 33,
+          "text": "Mas el que me oyere, habitará confiadamente, Y vivirá reposado, sin temor de mal."
+        }
       ]
     },
     {
       "chapter": 2,
       "verses": [
-        { "verse": 1, "text": "Hijo mío, si recibieres mis palabras, Y mis mandamientos guardares dentro de ti," },
-        { "verse": 6, "text": "Porque Jehová da la sabiduría, Y de su boca viene el conocimiento y la inteligencia." }
+        {
+          "verse": 1,
+          "text": "HIJO mío, si tomares mis palabras, Y mis mandamientos guardares dentro de ti,"
+        },
+        {
+          "verse": 2,
+          "text": "Haciendo estar atento tu oído á la sabiduría; Si inclinares tu corazón á la prudencia;"
+        },
+        {
+          "verse": 3,
+          "text": "Si clamares á la inteligencia, Y á la prudencia dieres tu voz;"
+        },
+        {
+          "verse": 4,
+          "text": "Si como á la plata la buscares, Y la escudriñares como á tesoros;"
+        },
+        {
+          "verse": 5,
+          "text": "Entonces entenderás el temor de Jehová, Y hallarás el conocimiento de Dios."
+        },
+        {
+          "verse": 6,
+          "text": "Porque Jehová da la sabiduría, Y de su boca viene el conocimiento y la inteligencia."
+        },
+        {
+          "verse": 7,
+          "text": "El provee de sólida sabiduría á los rectos: Es escudo á los que caminan rectamente."
+        },
+        {
+          "verse": 8,
+          "text": "Es el que guarda las veredas del juicio, Y preserva el camino de sus santos."
+        }
       ]
     },
     {
       "chapter": 3,
       "verses": [
-        { "verse": 5, "text": "Fíate de Jehová de todo tu corazón, Y no te apoyes en tu propia prudencia." },
-        { "verse": 6, "text": "Reconócelo en todos tus caminos, Y él enderezará tus veredas." }
+        {
+          "verse": 1,
+          "text": "HIJO mío, no te olvides de mi ley; Y tu corazón guarde mis mandamientos:"
+        },
+        {
+          "verse": 2,
+          "text": "Porque largura de días, y años de vida Y paz te aumentarán."
+        },
+        {
+          "verse": 3,
+          "text": "Misericordia y verdad no te desamparen; Atalas á tu cuello, Escríbelas en la tabla de tu corazón:"
+        },
+        {
+          "verse": 4,
+          "text": "Y hallarás gracia y buena opinión En los ojos de Dios y de los hombres."
+        },
+        {
+          "verse": 5,
+          "text": "Fíate de Jehová de todo tu corazón, Y no estribes en tu prudencia."
+        },
+        {
+          "verse": 6,
+          "text": "Reconócelo en todos tus caminos, Y él enderezará tus veredas."
+        },
+        {
+          "verse": 7,
+          "text": "No seas sabio en tu opinión: Teme á Jehová, y apártate del mal;"
+        },
+        {
+          "verse": 8,
+          "text": "Porque será medicina á tu ombligo, Y tuétano á tus huesos."
+        }
       ]
     },
     {
       "chapter": 4,
       "verses": [
-        { "verse": 7, "text": "Sabiduría ante todo; adquiere sabiduría; Y sobre todas tus posesiones adquiere inteligencia." }
+        {
+          "verse": 1,
+          "text": "OID, hijos, la doctrina de un padre, Y estad atentos para que conozcáis cordura."
+        },
+        {
+          "verse": 2,
+          "text": "Porque os doy buena enseñanza; No desamparéis mi ley."
+        },
+        {
+          "verse": 5,
+          "text": "Adquiere sabiduría, adquiere inteligencia; No te olvides ni te apartes de las razones de mi boca;"
+        },
+        {
+          "verse": 6,
+          "text": "No la dejes, y ella te guardará; Amala, y te conservará."
+        },
+        {
+          "verse": 7,
+          "text": "Sabiduría ante todo: adquiere sabiduría: Y ante toda tu posesión adquiere inteligencia."
+        },
+        {
+          "verse": 23,
+          "text": "Sobre toda cosa guardada guarda tu corazón; Porque de él mana la vida."
+        }
       ]
     },
     {
       "chapter": 5,
       "verses": [
-        { "verse": 1, "text": "Hijo mío, está atento a mi sabiduría, Y a mi inteligencia inclina tu oído," }
+        {
+          "verse": 1,
+          "text": "HIJO mío, está atento á mi sabiduría, Y á mi inteligencia inclina tu oído;"
+        },
+        {
+          "verse": 2,
+          "text": "Para que guardes consejo, Y tus labios conserven la ciencia."
+        },
+        {
+          "verse": 21,
+          "text": "Pues que los caminos del hombre están ante los ojos de Jehová, Y él considera todas sus veredas."
+        }
       ]
     },
     {
       "chapter": 6,
       "verses": [
-        { "verse": 6, "text": "Ve a la hormiga, oh perezoso, Mira sus caminos, y sé sabio;" }
+        {
+          "verse": 6,
+          "text": "Ve á la hormiga, oh perezoso Mira sus caminos, y sé sabio;"
+        },
+        {
+          "verse": 16,
+          "text": "Seis cosas aborrece Jehová, Y aun siete abomina su alma:"
+        },
+        {
+          "verse": 20,
+          "text": "Guarda, hijo mío, el mandamiento de tu padre, Y no dejes la enseñanza de tu madre:"
+        },
+        {
+          "verse": 23,
+          "text": "Porque el mandamiento es antorcha, y la enseñanza luz; Y camino de vida las reprensiones de la enseñanza:"
+        }
       ]
     },
     {
       "chapter": 7,
       "verses": [
-        { "verse": 1, "text": "Hijo mío, guarda mis razones, Y atesora contigo mis mandamientos." }
+        {
+          "verse": 1,
+          "text": "HIJO mío, guarda mis razones, Y encierra contigo mis mandamientos."
+        },
+        {
+          "verse": 2,
+          "text": "Guarda mis mandamientos, y vivirás; Y mi ley como las niñas de tus ojos."
+        },
+        {
+          "verse": 3,
+          "text": "Lígalos á tus dedos; Escríbelos en la tabla de tu corazón."
+        },
+        {
+          "verse": 4,
+          "text": "Di á la sabiduría: Tú eres mi hermana; Y á la inteligencia llama parienta:"
+        }
       ]
     },
     {
       "chapter": 8,
       "verses": [
-        { "verse": 1, "text": "¿No clama la sabiduría, Y da su voz la inteligencia?" }
+        {
+          "verse": 1,
+          "text": "¿NO clama la sabiduría, Y da su voz la inteligencia?"
+        },
+        {
+          "verse": 10,
+          "text": "Recibid mi enseñanza, y no plata; Y ciencia antes que el oro escogido."
+        },
+        {
+          "verse": 11,
+          "text": "Porque mejor es la sabiduría que las piedras preciosas; Y todas las cosas que se pueden desear, no son de comparar con ella."
+        },
+        {
+          "verse": 17,
+          "text": "Yo amo á los que me aman; Y me hallan los que madrugando me buscan."
+        },
+        {
+          "verse": 32,
+          "text": "Ahora pues, hijos, oidme: Y bienaventurados los que guardaren mis caminos."
+        },
+        {
+          "verse": 35,
+          "text": "Porque el que me hallare, hallará la vida, Y alcanzará el favor de Jehová."
+        }
       ]
     },
     {
       "chapter": 9,
       "verses": [
-        { "verse": 10, "text": "El temor de Jehová es el principio de la sabiduría, Y el conocimiento del Santísimo es la inteligencia." }
+        {
+          "verse": 9,
+          "text": "Da al sabio, y será más sabio: Enseña al justo, y acrecerá su saber."
+        },
+        {
+          "verse": 10,
+          "text": "El temor de Jehová es el principio de la sabiduría; Y la ciencia de los santos es inteligencia."
+        },
+        {
+          "verse": 11,
+          "text": "Porque por mí se aumentarán tus días, Y años de vida se te añadirán."
+        }
       ]
     },
     {
       "chapter": 10,
       "verses": [
-        { "verse": 1, "text": "El hijo sabio alegra al padre, Pero el hijo necio es tristeza de su madre." }
+        {
+          "verse": 1,
+          "text": "- Las sentencias de Salomón. - EL hijo sabio alegra al padre; Y el hijo necio es tristeza de su madre."
+        },
+        {
+          "verse": 4,
+          "text": "La mano negligente hace pobre: Mas la mano de los diligentes enriquece."
+        },
+        {
+          "verse": 12,
+          "text": "El odio despierta rencillas: Mas la caridad cubrirá todas las faltas."
+        },
+        {
+          "verse": 19,
+          "text": "En las muchas palabras no falta pecado: Mas el que refrena sus labios es prudente."
+        },
+        {
+          "verse": 22,
+          "text": "La bendición de Jehová es la que enriquece, Y no añade tristeza con ella."
+        }
       ]
     },
     {
       "chapter": 11,
       "verses": [
-        { "verse": 2, "text": "Cuando viene la soberbia, viene también la deshonra; Mas con los humildes está la sabiduría." }
+        {
+          "verse": 2,
+          "text": "Cuando viene la soberbia, viene también la deshonra: Mas con los humildes es la sabiduría."
+        },
+        {
+          "verse": 3,
+          "text": "La integridad de los rectos los encaminará: Mas destruirá á los pecadores la perversidad de ellos."
+        },
+        {
+          "verse": 25,
+          "text": "El alma liberal será engordada: Y el que saciare, él también será saciado."
+        },
+        {
+          "verse": 30,
+          "text": "El fruto del justo es árbol de vida: Y el que prende almas, es sabio."
+        }
       ]
     },
     {
       "chapter": 12,
       "verses": [
-        { "verse": 15, "text": "El camino del necio es derecho en su opinión; Mas el que obedece al consejo es sabio." }
+        {
+          "verse": 1,
+          "text": "EL que ama la corrección ama la sabiduría: Mas el que aborrece la reprensión, es ignorante."
+        },
+        {
+          "verse": 15,
+          "text": "El camino del necio es derecho en su opinión: Mas el que obedece al consejo es sabio."
+        },
+        {
+          "verse": 18,
+          "text": "Hay quienes hablan como dando estocadas de espada: Mas la lengua de los sabios es medicina."
+        },
+        {
+          "verse": 25,
+          "text": "El cuidado congojoso en el corazón del hombre, lo abate; Mas la buena palabra lo alegra."
+        }
       ]
     },
     {
       "chapter": 13,
       "verses": [
-        { "verse": 20, "text": "El que anda con sabios, sabio será; Mas el que se junta con necios será quebrantado." }
+        {
+          "verse": 3,
+          "text": "El que guarda su boca guarda su alma: Mas el que mucho abre sus labios tendrá calamidad."
+        },
+        {
+          "verse": 10,
+          "text": "Ciertamente la soberbia parirá contienda: Mas con los avisados es la sabiduría."
+        },
+        {
+          "verse": 12,
+          "text": "La esperanza que se prolonga, es tormento del corazón: Mas árbol de vida es el deseo cumplido."
+        },
+        {
+          "verse": 20,
+          "text": "El que anda con los sabios, sabio será; Mas el que se allega á los necios, será quebrantado."
+        }
       ]
     },
     {
       "chapter": 14,
       "verses": [
-        { "verse": 12, "text": "Hay camino que al hombre le parece derecho; Pero su fin es camino de muerte." }
+        {
+          "verse": 12,
+          "text": "Hay camino que al hombre parece derecho; Empero su fin son caminos de muerte."
+        },
+        {
+          "verse": 23,
+          "text": "En toda labor hay fruto: Mas la palabra de los labios solamente empobrece."
+        },
+        {
+          "verse": 26,
+          "text": "En el temor de Jehová está la fuerte confianza; Y esperanza tendrán sus hijos."
+        },
+        {
+          "verse": 29,
+          "text": "El que tarde se aira, es grande de entendimiento: Mas el corto de espíritu engrandece el desatino."
+        }
       ]
     },
     {
       "chapter": 15,
       "verses": [
-        { "verse": 1, "text": "La blanda respuesta quita la ira; Mas la palabra áspera hace subir el furor." }
+        {
+          "verse": 1,
+          "text": "LA blanda respuesta quita la ira: Mas la palabra áspera hace subir el furor."
+        },
+        {
+          "verse": 3,
+          "text": "Los ojos de Jehová están en todo lugar, Mirando á los malos y á los buenos."
+        },
+        {
+          "verse": 13,
+          "text": "El corazón alegre hermosea el rostro: Mas por el dolor de corazón el espíritu se abate."
+        },
+        {
+          "verse": 22,
+          "text": "Los pensamientos son frustrados donde no hay consejo; Mas en la multitud de consejeros se afirman."
+        },
+        {
+          "verse": 30,
+          "text": "La luz de los ojos alegra el corazón; Y la buena fama engorda los huesos."
+        }
       ]
     },
     {
       "chapter": 16,
       "verses": [
-        { "verse": 3, "text": "Encomienda a Jehová tus obras, Y tus pensamientos serán afirmados." },
-        { "verse": 9, "text": "El corazón del hombre piensa su camino; Mas Jehová endereza sus pasos." }
+        {
+          "verse": 3,
+          "text": "Encomienda á Jehová tus obras, Y tus pensamientos serán afirmados."
+        },
+        {
+          "verse": 9,
+          "text": "El corazón del hombre piensa su camino: Mas Jehová endereza sus pasos."
+        },
+        {
+          "verse": 18,
+          "text": "Antes del quebrantamiento es la soberbia; Y antes de la caída la altivez de espíritu."
+        },
+        {
+          "verse": 24,
+          "text": "Panal de miel son los dichos suaves. Suavidad al alma y medicina á los huesos."
+        },
+        {
+          "verse": 32,
+          "text": "Mejor es el que tarde se aira que el fuerte; Y el que se enseñorea de su espíritu, que el que toma una ciudad."
+        }
       ]
     },
     {
       "chapter": 17,
       "verses": [
-        { "verse": 17, "text": "En todo tiempo ama el amigo, Y es como un hermano en tiempo de angustia." },
-        { "verse": 22, "text": "El corazón alegre constituye buen remedio; Mas el espíritu triste seca los huesos." }
+        {
+          "verse": 9,
+          "text": "El que cubre la prevaricación, busca amistad: Mas el que reitera la palabra, aparta al amigo."
+        },
+        {
+          "verse": 17,
+          "text": "En todo tiempo ama el amigo; Y el hermano para la angustia es nacido."
+        },
+        {
+          "verse": 22,
+          "text": "El corazón alegre produce buena disposición: Mas el espíritu triste seca los huesos."
+        },
+        {
+          "verse": 27,
+          "text": "Detiene sus dichos el que tiene sabiduría: De prudente espíritu es el hombre entendido."
+        }
       ]
     },
     {
       "chapter": 18,
       "verses": [
-        { "verse": 10, "text": "Torre fuerte es el nombre de Jehová; A él correrá el justo, y será levantado." }
+        {
+          "verse": 10,
+          "text": "Torre fuerte es el nombre de Jehová: A él correrá el justo, y será levantado."
+        },
+        {
+          "verse": 12,
+          "text": "Antes del quebrantamiento se eleva el corazón del hombre, Y antes de la honra es el abatimiento."
+        },
+        {
+          "verse": 15,
+          "text": "El corazón del entendido adquiere sabiduría; Y el oído de los sabios busca la ciencia."
+        },
+        {
+          "verse": 21,
+          "text": "La muerte y la vida están en poder de la lengua; Y el que la ama comerá de sus frutos."
+        },
+        {
+          "verse": 24,
+          "text": "El hombre que tiene amigos, ha de mostrarse amigo: Y amigo hay más conjunto que el hermano."
+        }
       ]
     },
     {
       "chapter": 19,
       "verses": [
-        { "verse": 21, "text": "Muchos pensamientos hay en el corazón del hombre; Mas el consejo de Jehová permanecerá." }
+        {
+          "verse": 8,
+          "text": "El que posee entendimiento, ama su alma: El que guarda la inteligencia, hallará el bien."
+        },
+        {
+          "verse": 11,
+          "text": "La cordura del hombre detiene su furor; Y su honra es disimular la ofensa."
+        },
+        {
+          "verse": 17,
+          "text": "A Jehová empresta el que da al pobre, Y él le dará su paga."
+        },
+        {
+          "verse": 21,
+          "text": "Muchos pensamientos hay en el corazón del hombre; Mas el consejo de Jehová permanecerá."
+        }
       ]
     },
     {
       "chapter": 20,
       "verses": [
-        { "verse": 7, "text": "Camina en su integridad el justo; Sus hijos son dichosos después de él." }
+        {
+          "verse": 3,
+          "text": "Honra es del hombre dejarse de contienda: Mas todo insensato se envolverá en ella."
+        },
+        {
+          "verse": 7,
+          "text": "El justo que camina en su integridad, Bienaventurados serán sus hijos después de él."
+        },
+        {
+          "verse": 11,
+          "text": "Aun el muchacho es conocido por sus hechos, Si su obra fuere limpia y recta."
+        },
+        {
+          "verse": 24,
+          "text": "De Jehová son los pasos del hombre: ¿Cómo pues entenderá el hombre su camino?"
+        }
       ]
     },
     {
       "chapter": 21,
       "verses": [
-        { "verse": 3, "text": "Hacer justicia y juicio es a Jehová más agradable que sacrificio." }
+        {
+          "verse": 2,
+          "text": "Todo camino del hombre es recto en su opinión: Mas Jehová pesa los corazones."
+        },
+        {
+          "verse": 3,
+          "text": "Hacer justicia y juicio es á Jehová Más agradable que sacrificio."
+        },
+        {
+          "verse": 21,
+          "text": "El que sigue la justicia y la misericordia, Hallará la vida, la justicia, y la honra."
+        },
+        {
+          "verse": 23,
+          "text": "El que guarda su boca y su lengua, Su alma guarda de angustias."
+        }
       ]
     },
     {
       "chapter": 22,
       "verses": [
-        { "verse": 1, "text": "De más estima es el buen nombre que las muchas riquezas, Y la buena fama más que la plata y el oro." },
-        { "verse": 6, "text": "Instruye al niño en su camino, Y aun cuando fuere viejo no se apartará de él." }
+        {
+          "verse": 1,
+          "text": "DE más estima es la buena fama que las muchas riquezas; Y la buena gracia más que la plata y el oro."
+        },
+        {
+          "verse": 4,
+          "text": "Riquezas, y honra, y vida, Son la remuneración de la humildad y del temor de Jehová."
+        },
+        {
+          "verse": 6,
+          "text": "Instruye al niño en su carrera: Aun cuando fuere viejo no se apartará de ella."
+        },
+        {
+          "verse": 29,
+          "text": "¿Has visto hombre solícito en su obra? delante de los reyes estará; No estará delante de los de baja suerte."
+        }
       ]
     },
     {
       "chapter": 23,
       "verses": [
-        { "verse": 17, "text": "No tenga tu corazón envidia de los pecadores, Antes persevera en el temor de Jehová todo el tiempo;" }
+        {
+          "verse": 4,
+          "text": "No trabajes por ser rico; Pon coto á tu prudencia."
+        },
+        {
+          "verse": 17,
+          "text": "No tenga tu corazón envidia de los pecadores, Antes persevera en el temor de Jehová todo tiempo:"
+        },
+        {
+          "verse": 18,
+          "text": "Porque ciertamente hay fin, Y tu esperanza no será cortada."
+        },
+        {
+          "verse": 26,
+          "text": "Dame, hijo mío, tu corazón, Y miren tus ojos por mis caminos."
+        }
       ]
     },
     {
       "chapter": 24,
       "verses": [
-        { "verse": 3, "text": "Con sabiduría se edificará la casa, Y con prudencia se afirmará;" },
-        { "verse": 16, "text": "Porque siete veces cae el justo, y vuelve a levantarse; Mas los impíos caerán en el mal." }
+        {
+          "verse": 3,
+          "text": "Con sabiduría se edificará la casa, Y con prudencia se afirmará;"
+        },
+        {
+          "verse": 4,
+          "text": "Y con ciencia se henchirán las cámaras De todo bien preciado y agradable."
+        },
+        {
+          "verse": 10,
+          "text": "Si fueres flojo en el día de trabajo, Tu fuerza será reducida."
+        },
+        {
+          "verse": 16,
+          "text": "Porque siete veces cae el justo, y se torna á levantar; Mas los impíos caerán en el mal."
+        }
       ]
     },
     {
       "chapter": 25,
       "verses": [
-        { "verse": 11, "text": "Manzana de oro con figuras de plata Es la palabra dicha como conviene." }
+        {
+          "verse": 2,
+          "text": "Gloria de Dios es encubrir la palabra; Mas honra del rey es escudriñar la palabra."
+        },
+        {
+          "verse": 11,
+          "text": "Manzana de oro con figuras de plata Es la palabra dicha como conviene."
+        },
+        {
+          "verse": 21,
+          "text": "Si el que te aborrece tuviere hambre, dale de comer pan; Y si tuviere sed, dale de beber agua:"
+        },
+        {
+          "verse": 28,
+          "text": "Como ciudad derribada y sin muro, Es el hombre cuyo espíritu no tiene rienda."
+        }
       ]
     },
     {
       "chapter": 26,
       "verses": [
-        { "verse": 20, "text": "Sin leña se apaga el fuego, Y donde no hay chismoso, cesa la contienda." }
+        {
+          "verse": 4,
+          "text": "Nunca respondas al necio en conformidad á su necedad, Para que no seas tú también como él."
+        },
+        {
+          "verse": 11,
+          "text": "Como perro que vuelve á su vómito, Así el necio que repite su necedad."
+        },
+        {
+          "verse": 20,
+          "text": "Sin leña se apaga el fuego: Y donde no hay chismoso, cesa la contienda."
+        }
       ]
     },
     {
       "chapter": 27,
       "verses": [
-        { "verse": 1, "text": "No te jactes del día de mañana; Porque no sabes qué dará de sí el día." },
-        { "verse": 17, "text": "Hierro con hierro se aguza; Y así el hombre aguza el rostro de su amigo." }
+        {
+          "verse": 1,
+          "text": "NO te jactes del día de mañana; Porque no sabes qué dará de sí el día."
+        },
+        {
+          "verse": 2,
+          "text": "Alábete el extraño, y no tu boca; El ajeno, y no tus labios."
+        },
+        {
+          "verse": 17,
+          "text": "Hierro con hierro se aguza; Y el hombre aguza el rostro de su amigo."
+        },
+        {
+          "verse": 19,
+          "text": "Como un agua se parece á otra, Así el corazón del hombre al otro."
+        }
       ]
     },
     {
       "chapter": 28,
       "verses": [
-        { "verse": 1, "text": "Huye el impío sin que nadie lo persiga; Mas el justo está confiado como un león." },
-        { "verse": 13, "text": "El que encubre sus pecados no prosperará; Mas el que los confiesa y se aparta alcanzará misericordia." }
+        {
+          "verse": 1,
+          "text": "HUYE el impío sin que nadie lo persiga: Mas el justo está confiado como un leoncillo."
+        },
+        {
+          "verse": 13,
+          "text": "El que encubre sus pecados, no prosperará: Mas el que los confiesa y se aparta, alcanzará misericordia."
+        },
+        {
+          "verse": 26,
+          "text": "El que confía en su corazón es necio; Mas el que camina en sabiduría, será salvo."
+        }
       ]
     },
     {
       "chapter": 29,
       "verses": [
-        { "verse": 18, "text": "Sin profecía el pueblo se desenfrena; Mas el que guarda la ley es bienaventurado." },
-        { "verse": 25, "text": "El temor del hombre pondrá lazo; Mas el que confía en Jehová será exaltado." }
+        {
+          "verse": 11,
+          "text": "El necio da suelta á todo su espíritu; Mas el sabio al fin le sosiega."
+        },
+        {
+          "verse": 18,
+          "text": "Sin profecía el pueblo será disipado: Mas el que guarda la ley, bienaventurado él."
+        },
+        {
+          "verse": 25,
+          "text": "El temor del hombre pondrá lazo: Mas el que confía en Jehová será levantado."
+        }
       ]
     },
     {
       "chapter": 30,
       "verses": [
-        { "verse": 5, "text": "Toda palabra de Dios es limpia; El es escudo a los que en él esperan." }
+        {
+          "verse": 5,
+          "text": "Toda palabra de Dios es limpia: Es escudo á los que en él esperan."
+        },
+        {
+          "verse": 8,
+          "text": "Vanidad y palabra mentirosa aparta de mí. No me des pobreza ni riquezas; Manténme del pan que he menester;"
+        },
+        {
+          "verse": 9,
+          "text": "No sea que me harte, y te niegue, y diga, ¿Quién es Jehová? O no sea que siendo pobre, hurte, Y blasfeme el nombre de mi Dios."
+        }
       ]
     },
     {
       "chapter": 31,
       "verses": [
-        { "verse": 25, "text": "Fuerza y honor son su vestidura; Y se ríe de lo por venir." },
-        { "verse": 30, "text": "Engañosa es la gracia, y vana la hermosura; La mujer que teme a Jehová, ésa será alabada." }
+        {
+          "verse": 8,
+          "text": "Abre tu boca por el mudo, En el juicio de todos los hijos de muerte."
+        },
+        {
+          "verse": 9,
+          "text": "Abre tu boca, juzga justicia, Y el derecho del pobre y del menesteroso."
+        },
+        {
+          "verse": 25,
+          "text": "Fortaleza y honor son su vestidura; Y en el día postrero reirá."
+        },
+        {
+          "verse": 26,
+          "text": "Abrió su boca con sabiduría: Y la ley de clemencia está en su lengua."
+        },
+        {
+          "verse": 30,
+          "text": "Engañosa es la gracia, y vana la hermosura: La mujer que teme á Jehová, ésa será alabada."
+        }
       ]
     }
   ]

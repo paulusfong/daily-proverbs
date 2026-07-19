@@ -89,8 +89,8 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 # Test 2.1: Cache Version
-echo -n "2.1 Cache Version v5... "
-if grep -q "daily-proverbs-v5" service-worker.js; then
+echo -n "2.1 Cache Version v6... "
+if grep -q "daily-proverbs-v6" service-worker.js; then
     echo -e "${GREEN}✓ PASS${NC}"
     CACHE_V2=1
 else
@@ -124,11 +124,18 @@ for file in "${LANG_FILES[@]}"; do
         break
     fi
 done
-
 if [ $ALL_CACHED -eq 1 ]; then
     echo -e "${GREEN}✓ PASS${NC}"
 else
     echo -e "${RED}✗ FAIL${NC}"
+fi
+
+# Scope-relative precache (GitHub Pages subpath safe)
+echo -n "2.2b Scope-relative precache paths... "
+if grep -q "registration.scope" service-worker.js && grep -q "\./app.js" service-worker.js; then
+    echo -e "${GREEN}✓ PASS${NC}"
+else
+    echo -e "${YELLOW}⚠ WARN${NC} (optional)"
 fi
 
 # Test 2.3: Translations.js Cached

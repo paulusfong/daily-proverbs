@@ -114,7 +114,7 @@ const translations = {
         nativeName: 'Español',
         direction: 'ltr',
         locale: 'es-ES',
-        bibleVersion: 'RVR1960',
+        bibleVersion: 'RVR',
         ui: {
             // Header
             appName: 'Proverbios Diarios',

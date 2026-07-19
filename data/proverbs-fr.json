@@ -5,199 +5,724 @@
     {
       "chapter": 1,
       "verses": [
-        { "verse": 1, "text": "Proverbes de Salomon, fils de David, roi d'Israël," },
-        { "verse": 2, "text": "Pour connaître la sagesse et l'instruction, Pour comprendre les paroles de l'intelligence;" },
-        { "verse": 7, "text": "La crainte de l'Éternel est le commencement de la science; Les insensés méprisent la sagesse et l'instruction." }
+        {
+          "verse": 1,
+          "text": "Proverbes de Salomon, fils de David, roi d'Israël;"
+        },
+        {
+          "verse": 2,
+          "text": "Pour faire connaître la sagesse et l'instruction, pour faire comprendre les discours d'intelligence;"
+        },
+        {
+          "verse": 3,
+          "text": "Pour faire recevoir une instruction de raison, de justice, de jugement, et d'équité;"
+        },
+        {
+          "verse": 4,
+          "text": "Pour donner du discernement aux simples, de la connaissance et de la réflexion au jeune homme."
+        },
+        {
+          "verse": 5,
+          "text": "Le sage écoutera et deviendra plus instruit, et l'homme intelligent acquerra de sages conseils,"
+        },
+        {
+          "verse": 6,
+          "text": "Afin d'entendre les sentences et les énigmes, les paroles des sages, et leurs discours profonds."
+        },
+        {
+          "verse": 7,
+          "text": "La crainte de l'Éternel est le commencement de la connaissance; mais les fous méprisent la sagesse et l'instruction."
+        },
+        {
+          "verse": 8,
+          "text": "Mon fils, écoute l'instruction de ton père, et n'abandonne point l'enseignement de ta mère."
+        },
+        {
+          "verse": 9,
+          "text": "Car ce sont des grâces assemblées autour de ta tête, et des colliers à ton cou."
+        },
+        {
+          "verse": 10,
+          "text": "Mon fils, si les pécheurs veulent te séduire, n'y consens pas."
+        },
+        {
+          "verse": 33,
+          "text": "Mais celui qui m'écoute, habitera en sûreté, et sera tranquille, sans être effrayé d'aucun mal."
+        }
       ]
     },
     {
       "chapter": 2,
       "verses": [
-        { "verse": 1, "text": "Mon fils, si tu reçois mes paroles, Et si tu gardes avec toi mes préceptes," },
-        { "verse": 6, "text": "Car l'Éternel donne la sagesse; De sa bouche sortent la connaissance et l'intelligence;" }
+        {
+          "verse": 1,
+          "text": "Mon fils, si tu reçois mes paroles, et si tu conserves avec toi mes commandements,"
+        },
+        {
+          "verse": 2,
+          "text": "Tellement que tu rendes ton oreille attentive à la sagesse, et que tu inclines ton cœur à l'intelligence;"
+        },
+        {
+          "verse": 3,
+          "text": "Si tu appelles à toi la prudence, et si tu adresses ta voix à l'intelligence;"
+        },
+        {
+          "verse": 4,
+          "text": "Si tu la cherches comme de l'argent, et si tu la recherches soigneusement comme un trésor;"
+        },
+        {
+          "verse": 5,
+          "text": "Alors tu comprendras la crainte de l'Éternel, et tu trouveras la connaissance de Dieu."
+        },
+        {
+          "verse": 6,
+          "text": "Car l'Éternel donne la sagesse; de sa bouche procèdent la connaissance et l'intelligence."
+        },
+        {
+          "verse": 7,
+          "text": "Il réserve le salut à ceux qui sont droits, et il est le bouclier de ceux qui marchent en intégrité,"
+        },
+        {
+          "verse": 8,
+          "text": "Pour suivre les sentiers de la justice. Il gardera la voie de ses bien-aimés."
+        }
       ]
     },
     {
       "chapter": 3,
       "verses": [
-        { "verse": 5, "text": "Confie-toi en l'Éternel de tout ton coeur, Et ne t'appuie pas sur ta sagesse;" },
-        { "verse": 6, "text": "Reconnais-le dans toutes tes voies, Et il aplanira tes sentiers." }
+        {
+          "verse": 1,
+          "text": "Mon fils, n'oublie point mon enseignement, et que ton cœur garde mes commandements."
+        },
+        {
+          "verse": 2,
+          "text": "Car ils t'apporteront de longs jours, et des années de vie, et la prospérité."
+        },
+        {
+          "verse": 3,
+          "text": "Que la miséricorde et la vérité ne t'abandonnent point; lie-les à ton cou, écris-les sur la table de ton cœur;"
+        },
+        {
+          "verse": 4,
+          "text": "Et tu obtiendras la grâce et une grande sagesse aux yeux de Dieu et des hommes."
+        },
+        {
+          "verse": 5,
+          "text": "Confie-toi en l'Éternel de tout ton cœur, et ne t'appuie point sur ta prudence."
+        },
+        {
+          "verse": 6,
+          "text": "Considère-le dans toutes tes voies, et il dirigera tes sentiers."
+        },
+        {
+          "verse": 7,
+          "text": "Ne sois point sage à tes propres yeux; crains l'Éternel, et détourne-toi du mal."
+        },
+        {
+          "verse": 8,
+          "text": "Ce sera la santé pour tes muscles et un rafraîchissement pour tes os."
+        }
       ]
     },
     {
       "chapter": 4,
       "verses": [
-        { "verse": 7, "text": "Voici le commencement de la sagesse: Acquiers la sagesse, Et avec tout ce que tu possèdes acquiers l'intelligence." }
+        {
+          "verse": 1,
+          "text": "Enfants, écoutez l'instruction de votre père, et soyez attentifs pour connaître la prudence."
+        },
+        {
+          "verse": 2,
+          "text": "Car je vous donne de bons conseils; n'abandonnez point mon enseignement."
+        },
+        {
+          "verse": 5,
+          "text": "Acquiers la sagesse, acquiers la prudence; ne l'oublie pas, et ne te détourne point des paroles de ma bouche."
+        },
+        {
+          "verse": 6,
+          "text": "Ne l'abandonne pas, elle te gardera; aime-la, et elle te protégera."
+        },
+        {
+          "verse": 7,
+          "text": "La sagesse est la chose la plus importante, donc acquiers la sagesse; et avec tout ton avoir, acquiers la connaissance."
+        },
+        {
+          "verse": 23,
+          "text": "Garde ton cœur plus que toute autre chose qu'on garde; car c'est de lui que procèdent les sources de la vie."
+        }
       ]
     },
     {
       "chapter": 5,
       "verses": [
-        { "verse": 1, "text": "Mon fils, sois attentif à ma sagesse, Prête l'oreille à mon intelligence," }
+        {
+          "verse": 1,
+          "text": "Mon fils, sois attentif à ma sagesse, incline ton oreille à ma prudence;"
+        },
+        {
+          "verse": 2,
+          "text": "Afin que tu conserves la réflexion, et que tes lèvres gardent la connaissance."
+        },
+        {
+          "verse": 21,
+          "text": "Car les voies de l'homme sont devant les yeux de l'Éternel, et il pèse toutes ses démarches."
+        }
       ]
     },
     {
       "chapter": 6,
       "verses": [
-        { "verse": 6, "text": "Va vers la fourmi, paresseux; Considère ses voies, et deviens sage." }
+        {
+          "verse": 6,
+          "text": "Paresseux, va vers la fourmi, regarde ses voies, et deviens sage."
+        },
+        {
+          "verse": 16,
+          "text": "Il y a six choses que hait l'Éternel, même sept qui lui sont en abomination:"
+        },
+        {
+          "verse": 20,
+          "text": "Mon fils, garde le commandement de ton père, et n'abandonne point l'enseignement de ta mère."
+        },
+        {
+          "verse": 23,
+          "text": "Car le commandement est une lampe, l'enseignement est une lumière, et les corrections propres à instruire sont le chemin de la vie."
+        }
       ]
     },
     {
       "chapter": 7,
       "verses": [
-        { "verse": 1, "text": "Mon fils, retiens mes paroles, Et garde avec toi mes préceptes." }
+        {
+          "verse": 1,
+          "text": "Mon fils, garde mes paroles et conserve au-dedans de toi mes commandements."
+        },
+        {
+          "verse": 2,
+          "text": "Observe mes commandements, et tu vivras; garde mon enseignement comme la prunelle de tes yeux;"
+        },
+        {
+          "verse": 3,
+          "text": "Lie-les à tes doigts, écris-les sur la table de ton cœur."
+        },
+        {
+          "verse": 4,
+          "text": "Dis à la sagesse: Tu es ma sœur; et appelle la prudence ton amie;"
+        }
       ]
     },
     {
       "chapter": 8,
       "verses": [
-        { "verse": 1, "text": "La sagesse ne crie-t-elle pas? L'intelligence n'élève-t-elle pas sa voix?" }
+        {
+          "verse": 1,
+          "text": "La sagesse ne crie-t-elle pas, et l'intelligence ne fait-elle pas entendre sa voix?"
+        },
+        {
+          "verse": 10,
+          "text": "Recherchez mon instruction, plus que de l'argent; et la science, plus que de l'or choisi."
+        },
+        {
+          "verse": 11,
+          "text": "Car la sagesse est meilleure que les perles, et tout ce qu'on pourrait souhaiter ne la vaut pas."
+        },
+        {
+          "verse": 17,
+          "text": "J'aime ceux qui m'aiment; et ceux qui me cherchent me trouvent."
+        },
+        {
+          "verse": 32,
+          "text": "Maintenant donc, mes enfants, écoutez-moi. Heureux ceux qui garderont mes voies!"
+        },
+        {
+          "verse": 35,
+          "text": "Car celui qui me trouve, trouve la vie, et obtient la faveur de l'Éternel;"
+        }
       ]
     },
     {
       "chapter": 9,
       "verses": [
-        { "verse": 10, "text": "Le commencement de la sagesse, c'est la crainte de l'Éternel; Et la science des saints, c'est l'intelligence." }
+        {
+          "verse": 9,
+          "text": "Instruis un sage, et il deviendra encore plus sage; enseigne un homme de bien, et il croîtra en science."
+        },
+        {
+          "verse": 10,
+          "text": "Le commencement de la sagesse est la crainte de l'Éternel; et la science des saints c'est la prudence."
+        },
+        {
+          "verse": 11,
+          "text": "Car par moi tes jours seront multipliés, et des années seront ajoutées à ta vie."
+        }
       ]
     },
     {
       "chapter": 10,
       "verses": [
-        { "verse": 1, "text": "Un fils sage fait la joie d'un père, Et un fils insensé le chagrin de sa mère." }
+        {
+          "verse": 1,
+          "text": "Proverbes de Salomon. L'enfant sage réjouit son père; mais l'enfant insensé est le chagrin de sa mère."
+        },
+        {
+          "verse": 4,
+          "text": "La main paresseuse appauvrit; mais la main des diligents enrichit."
+        },
+        {
+          "verse": 12,
+          "text": "La haine excite les querelles; mais la charité couvre toutes les fautes."
+        },
+        {
+          "verse": 19,
+          "text": "La multitude de paroles n’est pas exempte de péché; mais celui qui retient ses lèvres est prudent."
+        },
+        {
+          "verse": 22,
+          "text": "C'est la bénédiction de l'Éternel qui enrichit, et il n'y joint aucune peine."
+        }
       ]
     },
     {
       "chapter": 11,
       "verses": [
-        { "verse": 2, "text": "Quand vient l'orgueil, vient aussi l'ignominie; Mais la sagesse est avec les humbles." }
+        {
+          "verse": 2,
+          "text": "L'orgueil est-il venu, aussitôt vient l'ignominie; mais la sagesse est avec les humbles."
+        },
+        {
+          "verse": 3,
+          "text": "L'intégrité des hommes droits les conduit; mais la perversité des perfides les détruit."
+        },
+        {
+          "verse": 25,
+          "text": "Celui qui est bienfaisant sera rassasié, et celui qui arrose, sera aussi arrosé lui-même."
+        },
+        {
+          "verse": 30,
+          "text": "Le fruit du juste est un arbre de vie, et le sage gagne les cœurs."
+        }
       ]
     },
     {
       "chapter": 12,
       "verses": [
-        { "verse": 15, "text": "La voie de l'insensé est droite à ses yeux, Mais celui qui écoute les conseils est sage." }
+        {
+          "verse": 1,
+          "text": "Celui qui aime la correction, aime la science; mais celui qui hait d'être repris, est un insensé."
+        },
+        {
+          "verse": 15,
+          "text": "La voie de l'insensé est droite à ses yeux; mais celui qui écoute le conseil, est sage."
+        },
+        {
+          "verse": 18,
+          "text": "Il y a tel homme dont les paroles blessent comme des pointes d'épée; mais la langue des sages est guérison."
+        },
+        {
+          "verse": 25,
+          "text": "Le chagrin qui est dans le cœur de l'homme, l'accable; mais une bonne parole le réjouit."
+        }
       ]
     },
     {
       "chapter": 13,
       "verses": [
-        { "verse": 20, "text": "Celui qui fréquente les sages devient sage, Mais celui qui se plaît avec les insensés s'en trouve mal." }
+        {
+          "verse": 3,
+          "text": "Celui qui garde sa bouche, garde son âme; mais celui qui ouvre trop ses lèvres, y trouvera sa perte."
+        },
+        {
+          "verse": 10,
+          "text": "L'orgueil ne produit que des querelles; mais la sagesse est avec ceux qui prennent conseil."
+        },
+        {
+          "verse": 12,
+          "text": "L'espérance différée fait languir le cœur; mais le souhait accompli est comme l'arbre de vie."
+        },
+        {
+          "verse": 20,
+          "text": "Celui qui fréquente les sages, deviendra sage; mais le compagnon des fous se perdra."
+        }
       ]
     },
     {
       "chapter": 14,
       "verses": [
-        { "verse": 12, "text": "Telle voie paraît droite à un homme, Mais son issue, c'est la voie de la mort." }
+        {
+          "verse": 12,
+          "text": "Il y a telle voie qui semble droite à l'homme, mais dont l'issue est la voie de la mort."
+        },
+        {
+          "verse": 23,
+          "text": "En tout travail il y a quelque profit; mais les vains discours ne tournent qu'à disette."
+        },
+        {
+          "verse": 26,
+          "text": "Il y a une ferme assurance dans la crainte de l'Éternel; et il y aura une sûre retraite pour les enfants de celui qui le craint."
+        },
+        {
+          "verse": 29,
+          "text": "Celui qui est lent à la colère est d'un grand sens; mais celui qui est prompt à se courroucer, étale sa folie."
+        }
       ]
     },
     {
       "chapter": 15,
       "verses": [
-        { "verse": 1, "text": "Une réponse douce calme la fureur, Mais une parole dure excite la colère." }
+        {
+          "verse": 1,
+          "text": "Une réponse douce apaise la fureur; mais la parole dure excite la colère."
+        },
+        {
+          "verse": 3,
+          "text": "Les yeux de l'Éternel sont en tous lieux; ils contemplent les méchants et les bons."
+        },
+        {
+          "verse": 13,
+          "text": "Le cœur joyeux embellit le visage; mais la tristesse du cœur abat l'esprit."
+        },
+        {
+          "verse": 22,
+          "text": "Les projets échouent où manquent les conseils; mais ils s'affermissent lorsqu'il y a beaucoup de conseillers."
+        },
+        {
+          "verse": 30,
+          "text": "La lumière des yeux réjouit le cœur, et une bonne nouvelle engraisse les os."
+        }
       ]
     },
     {
       "chapter": 16,
       "verses": [
-        { "verse": 3, "text": "Recommande à l'Éternel tes oeuvres, Et tes projets réussiront." },
-        { "verse": 9, "text": "Le coeur de l'homme médite sa voie, Mais c'est l'Éternel qui dirige ses pas." }
+        {
+          "verse": 3,
+          "text": "Remets tes affaires à l'Éternel, et tes desseins seront affermis."
+        },
+        {
+          "verse": 9,
+          "text": "Le cœur de l'homme délibère sur sa conduite; mais l'Éternel dirige ses pas."
+        },
+        {
+          "verse": 18,
+          "text": "L'orgueil va devant l'écrasement, et la fierté d'esprit devant la ruine."
+        },
+        {
+          "verse": 24,
+          "text": "Les paroles agréables sont des rayons de miel, une douceur à l'âme, et la santé aux os."
+        },
+        {
+          "verse": 32,
+          "text": "Celui qui est lent à la colère vaut mieux que l'homme vaillant; et celui qui est maître de son cœur, que celui qui prend des villes."
+        }
       ]
     },
     {
       "chapter": 17,
       "verses": [
-        { "verse": 17, "text": "L'ami aime en tout temps, Et dans le malheur il se montre un frère." },
-        { "verse": 22, "text": "Un coeur joyeux est un bon remède, Mais un esprit abattu dessèche les os." }
+        {
+          "verse": 9,
+          "text": "Celui qui couvre les fautes, cherche l'amitié; mais celui qui en fait rapport, divise les meilleurs amis."
+        },
+        {
+          "verse": 17,
+          "text": "L'intime ami aime en tout temps, et il naîtra comme un frère dans la détresse."
+        },
+        {
+          "verse": 22,
+          "text": "Le coeur joyeux vaut un remède; mais l'esprit abattu dessèche les os."
+        },
+        {
+          "verse": 27,
+          "text": "L'homme retenu dans ses paroles connaît la prudence, et celui qui est perceptif est d'un esprit admirable."
+        }
       ]
     },
     {
       "chapter": 18,
       "verses": [
-        { "verse": 10, "text": "Le nom de l'Éternel est une tour forte; Le juste s'y réfugie, et se trouve en sûreté." }
+        {
+          "verse": 10,
+          "text": "Le nom de l'Éternel est une forte tour; le juste y court, et il y est dans une haute retraite."
+        },
+        {
+          "verse": 12,
+          "text": "Le cœur de l'homme s'élève, avant que la ruine arrive; mais l'humilité précède la gloire."
+        },
+        {
+          "verse": 15,
+          "text": "Le cœur de l'homme intelligent acquiert de la science, et l'oreille des sages cherche la connaissance."
+        },
+        {
+          "verse": 21,
+          "text": "La mort et la vie sont au pouvoir de la langue, et celui qui en aime l'usage, en mangera les fruits."
+        },
+        {
+          "verse": 24,
+          "text": "Celui qui a beaucoup de compagnons les a pour son malheur; mais il y a tel ami plus attaché qu'un frère."
+        }
       ]
     },
     {
       "chapter": 19,
       "verses": [
-        { "verse": 21, "text": "Il y a dans le coeur de l'homme beaucoup de projets, Mais c'est le dessein de l'Éternel qui s'accomplit." }
+        {
+          "verse": 8,
+          "text": "Celui qui acquiert du sens, aime son âme, et celui qui conserve la prudence, trouvera le bien."
+        },
+        {
+          "verse": 11,
+          "text": "L'homme prudent retient sa colère; et son honneur, c'est d'oublier les offenses."
+        },
+        {
+          "verse": 17,
+          "text": "Celui qui a pitié du pauvre, prête à l'Éternel, et il lui rendra son bienfait."
+        },
+        {
+          "verse": 21,
+          "text": "Il y a des pensées en grand nombre dans le coeur de l'homme; mais le conseil de l'Éternel est immuable."
+        }
       ]
     },
     {
       "chapter": 20,
       "verses": [
-        { "verse": 7, "text": "Le juste marche dans son intégrité; Heureux ses enfants après lui!" }
+        {
+          "verse": 3,
+          "text": "C'est une gloire pour l'homme de s'abstenir des disputes; mais tout insensé s'y engage."
+        },
+        {
+          "verse": 7,
+          "text": "Le juste marche dans son intégrité; heureux ses enfants après lui!"
+        },
+        {
+          "verse": 11,
+          "text": "L'enfant fait déjà connaître par ses actions, si sa conduite sera pure et droite."
+        },
+        {
+          "verse": 24,
+          "text": "C'est l'Éternel qui dirige les pas de l'homme; comment donc l'homme comprendrait-il sa voie?"
+        }
       ]
     },
     {
       "chapter": 21,
       "verses": [
-        { "verse": 3, "text": "La pratique de la justice et de l'équité, Voilà ce que l'Éternel préfère aux sacrifices." }
+        {
+          "verse": 2,
+          "text": "Toutes les voies de l'homme sont droites à ses yeux; mais c'est l'Éternel qui pèse les cœurs."
+        },
+        {
+          "verse": 3,
+          "text": "Faire ce qui est juste et droit, est une chose que l'Éternel aime mieux que des sacrifices."
+        },
+        {
+          "verse": 21,
+          "text": "Celui qui recherche la justice et la miséricorde, trouvera la vie, la justice et la gloire."
+        },
+        {
+          "verse": 23,
+          "text": "Celui qui garde sa bouche et sa langue, garde son âme de détresse."
+        }
       ]
     },
     {
       "chapter": 22,
       "verses": [
-        { "verse": 1, "text": "La réputation est préférable à de grandes richesses, Et la grâce vaut mieux que l'argent et que l'or." },
-        { "verse": 6, "text": "Instruis l'enfant selon la voie qu'il doit suivre; Et quand il sera vieux, il ne s'en détournera pas." }
+        {
+          "verse": 1,
+          "text": "La bonne réputation est préférable aux grandes richesses, et une bonne estime à l'argent et à l'or."
+        },
+        {
+          "verse": 4,
+          "text": "Le fruit de l'humilité et de la crainte de l'Éternel, c'est la richesse, la gloire et la vie."
+        },
+        {
+          "verse": 6,
+          "text": "Instruis le jeune enfant selon la voie qu'il doit suivre; lors même qu'il sera devenu vieux, il ne s'en éloignera point."
+        },
+        {
+          "verse": 29,
+          "text": "As-tu vu un homme habile dans son travail? Il sera au service des rois, et non à celui de gens d'une condition obscure."
+        }
       ]
     },
     {
       "chapter": 23,
       "verses": [
-        { "verse": 17, "text": "Que ton coeur n'envie point les pécheurs, Mais qu'il ait toujours la crainte de l'Éternel;" }
+        {
+          "verse": 4,
+          "text": "Ne te fatigue pas à t'enrichir; n'y applique pas ton esprit."
+        },
+        {
+          "verse": 17,
+          "text": "Que ton cœur ne porte point envie aux pécheurs; mais adonne-toi à la crainte de l'Éternel continuellement."
+        },
+        {
+          "verse": 18,
+          "text": "Car il y aura certainement une bonne issue, et ton attente ne sera point trompée."
+        },
+        {
+          "verse": 26,
+          "text": "Mon fils, donne-moi ton cœur, et que tes yeux prennent garde à mes voies."
+        }
       ]
     },
     {
       "chapter": 24,
       "verses": [
-        { "verse": 3, "text": "C'est par la sagesse qu'une maison s'élève, Et par l'intelligence qu'elle s'affermit;" },
-        { "verse": 16, "text": "Car sept fois le juste tombe, et il se relève, Mais les méchants sont précipités dans le malheur." }
+        {
+          "verse": 3,
+          "text": "C'est par la sagesse que la maison sera bâtie, et c'est par l'intelligence qu'elle sera affermie."
+        },
+        {
+          "verse": 4,
+          "text": "Et c'est par la science que les chambres seront remplies de tous les biens précieux et agréables."
+        },
+        {
+          "verse": 10,
+          "text": "Si tu perds courage au jour de la détresse, ta force sera petite."
+        },
+        {
+          "verse": 16,
+          "text": "Car le juste tombera sept fois, et il sera relevé; mais les méchants sont précipités dans le malheur."
+        }
       ]
     },
     {
       "chapter": 25,
       "verses": [
-        { "verse": 11, "text": "Comme des pommes d'or sur des ciselures d'argent, Ainsi est une parole dite à propos." }
+        {
+          "verse": 2,
+          "text": "La gloire de Dieu est de cacher les choses; mais la gloire des rois est de sonder les affaires."
+        },
+        {
+          "verse": 11,
+          "text": "Une parole dite à propos est comme des pommes d'or dans des paniers d'argent."
+        },
+        {
+          "verse": 21,
+          "text": "Si ton ennemi a faim donne-lui du pain à manger; et s'il a soif donne-lui de l'eau à boire."
+        },
+        {
+          "verse": 28,
+          "text": "L'homme qui n'est pas maître de lui-même, est comme une ville où il y a brèche et qui est sans murailles."
+        }
       ]
     },
     {
       "chapter": 26,
       "verses": [
-        { "verse": 20, "text": "Faute de bois, le feu s'éteint; Et quand il n'y a point de rapporteur, la querelle s'apaise." }
+        {
+          "verse": 4,
+          "text": "Ne réponds point au fou selon sa folie, de peur que tu ne lui ressembles toi-même."
+        },
+        {
+          "verse": 11,
+          "text": "Comme le chien retourne à ce qu'il a vomi, ainsi l'insensé revient à sa folie."
+        },
+        {
+          "verse": 20,
+          "text": "Le feu s'éteint faute de bois; ainsi quand il n'y aura plus de rapporteurs, les querelles s'apaiseront."
+        }
       ]
     },
     {
       "chapter": 27,
       "verses": [
-        { "verse": 1, "text": "Ne te vante pas du lendemain, Car tu ne sais pas ce qu'un jour peut enfanter." },
-        { "verse": 17, "text": "Comme le fer aiguise le fer, Ainsi un homme excite la colère d'un homme." }
+        {
+          "verse": 1,
+          "text": "Ne te vante point du jour du lendemain; car tu ne sais pas ce que ce jour peut enfanter."
+        },
+        {
+          "verse": 2,
+          "text": "Qu'un autre te loue, et non pas ta propre bouche; que ce soit un étranger, et non tes lèvres."
+        },
+        {
+          "verse": 17,
+          "text": "Comme le fer aiguise le fer, ainsi un homme en aiguise un autre."
+        },
+        {
+          "verse": 19,
+          "text": "Comme dans l'eau le visage répond au visage, ainsi le cœur d'un homme répond à celui d'un autre homme."
+        }
       ]
     },
     {
       "chapter": 28,
       "verses": [
-        { "verse": 1, "text": "Le méchant prend la fuite sans qu'on le poursuive, Le juste a de l'assurance comme un jeune lion." },
-        { "verse": 13, "text": "Celui qui cache ses transgressions ne prospère point, Mais celui qui les avoue et les délaisse obtient miséricorde." }
+        {
+          "verse": 1,
+          "text": "Le méchant fuit sans qu'on le poursuive; mais le juste a de l'assurance comme un jeune lion."
+        },
+        {
+          "verse": 13,
+          "text": "Celui qui cache ses transgressions, ne prospérera point; mais celui qui les confesse et qui les abandonne, obtiendra miséricorde."
+        },
+        {
+          "verse": 26,
+          "text": "Celui qui se confie en son propre cœur, est un insensé; mais celui qui marche dans la sagesse, sera délivré."
+        }
       ]
     },
     {
       "chapter": 29,
       "verses": [
-        { "verse": 18, "text": "Quand il n'y a pas de révélation, le peuple est sans frein; Heureux s'il observe la loi!" },
-        { "verse": 25, "text": "La crainte des hommes tend un piège, Mais celui qui se confie en l'Éternel est protégé." }
+        {
+          "verse": 11,
+          "text": "L'insensé met dehors tout ce qu'il a dans l'esprit; mais le sage le réprime et le retient."
+        },
+        {
+          "verse": 18,
+          "text": "Lorsqu'il n'y a point de vision, le peuple est sans frein; mais heureux est celui qui garde la loi!"
+        },
+        {
+          "verse": 25,
+          "text": "La crainte qu'on a de l'homme, fait tomber dans le piège; mais celui qui s'assure en l'Éternel aura une haute retraite."
+        }
       ]
     },
     {
       "chapter": 30,
       "verses": [
-        { "verse": 5, "text": "Toute parole de Dieu est éprouvée. Il est un bouclier pour ceux qui cherchent en lui un refuge." }
+        {
+          "verse": 5,
+          "text": "Toute la Parole de Dieu est épurée; il est un bouclier pour ceux qui ont en lui leur refuge."
+        },
+        {
+          "verse": 8,
+          "text": "Éloigne de moi la vanité et la parole de mensonge. Ne me donne ni pauvreté ni richesses; nourris-moi avec la nourriture qui me convient;"
+        },
+        {
+          "verse": 9,
+          "text": "De peur que dans l'abondance je ne te renie, et que je ne dise: Qui est l'Éternel? De peur aussi que dans la pauvreté je ne dérobe, et que je ne prenne en vain le nom de mon Dieu."
+        }
       ]
     },
     {
       "chapter": 31,
       "verses": [
-        { "verse": 25, "text": "Elle est revêtue de force et de gloire, Et elle se rit de l'avenir." },
-        { "verse": 30, "text": "La grâce est trompeuse, et la beauté est vaine; La femme qui craint l'Éternel est celle qui sera louée." }
+        {
+          "verse": 8,
+          "text": "Ouvre ta bouche en faveur du muet, et pour le droit de ceux qui sont délaissés."
+        },
+        {
+          "verse": 9,
+          "text": "Ouvre ta bouche, juge avec justice, et fais droit à l'affligé et au pauvre."
+        },
+        {
+          "verse": 25,
+          "text": "La force et la magnificence forment son vêtement, et elle se rit du jour à venir;"
+        },
+        {
+          "verse": 26,
+          "text": "Elle ouvre la bouche avec sagesse, et des instructions aimables sont sur sa langue;"
+        },
+        {
+          "verse": 30,
+          "text": "La grâce est trompeuse, et la beauté s'évanouit; mais la femme qui craint l'Éternel est celle qui sera louée."
+        }
       ]
     }
   ]

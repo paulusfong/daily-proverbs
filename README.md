@@ -1,122 +1,127 @@
-# Daily Proverbs - ESV Bible
+# Daily Proverbs
 
-A beautiful Progressive Web App that delivers daily inspirational verses from the Book of Proverbs (ESV Bible).
+A lightweight Progressive Web App that shows a daily verse from the Book of Proverbs, with browse and favorites, offline support, and four languages.
 
-![Daily Proverbs App](icons/icon-192.png)
+**Live site (GitHub Pages):** [https://paulusfong.github.io/daily-proverbs/](https://paulusfong.github.io/daily-proverbs/)  
+**Source:** [github.com/paulusfong/daily-proverbs](https://github.com/paulusfong/daily-proverbs)
 
-## ✨ Features
+## Features
 
-- **📖 Daily Verses**: Automatically displays verses from Proverbs based on the day of the month (1-31)
-- **🎨 Beautiful Design**: Premium glassmorphism UI with vibrant purple-gold gradients
-- **📚 Browse Mode**: Explore all 31 chapters of Proverbs
-- **❤️ Favorites**: Save and access your favorite verses
-- **🌓 Dark/Light Themes**: Toggle between beautiful light and dark modes
-- **📱 Offline Support**: Full functionality without internet connection
-- **🏠 Installable**: Add to your phone's home screen like a native app
+- **Daily verse** — Chapter follows the day of the month (1–31); verse is **stable for that calendar day** (and language), not reshuffled on every refresh
+- **Browse** — Explore curated verses across all 31 chapters
+- **Favorites** — Save verses per language (stored in `localStorage`)
+- **Languages** — English, 中文, Español, Français
+- **Themes** — Light / dark
+- **PWA** — Installable, works offline after first load
+- **Share** — Web Share API with clipboard fallback
 
-## 🚀 Getting Started
+## Bible versions
 
-### Prerequisites
+| Language | Version in app | Notes |
+|----------|----------------|--------|
+| English (`en`) | **ESV** | Curated selection (~142 verses) |
+| Chinese (`zh`) | **和合本** (CUV, simplified) | Same verse references as English |
+| Spanish (`es`) | **Reina-Valera (RVR)** | Same verse references as English |
+| French (`fr`) | **LSG** (Louis Segond family) | Same verse references as English |
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Python 3 (for local development server)
+Browse mode shows **selected verses**, not the full book text. A note in the UI makes that clear.
 
-### Running Locally
+> **Licensing:** Bible translations have their own terms. ESV in particular is copyrighted—use and distribution must comply with the publisher’s guidelines. Chinese CUV text used for expansion is from public-domain open-Bible sources; verify rights for your deployment region and any commercial use.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/daily-proverbs.git
-   cd daily-proverbs
-   ```
+## Stack
 
-2. Start a local server:
-   ```bash
-   python -m http.server 8080
-   ```
+- Vanilla HTML / CSS / JavaScript (no framework, no runtime npm deps for the app)
+- Pure logic in `app-logic.js` (unit-tested)
+- Service worker: network-first for HTML/JS, precache for offline assets
+- Security: CSP (no `unsafe-inline` styles), language whitelist, host header files
 
-3. Open your browser and navigate to:
-   ```
-   http://localhost:8080
-   ```
+## Run locally
 
-### Installing as PWA
+```bash
+# From the repo root (any static server works)
+python3 -m http.server 8080
+```
 
-**On Desktop (Chrome/Edge):**
-1. Click the install icon in the address bar
-2. Click "Install" in the prompt
-3. App opens in standalone window
+Open [http://localhost:8080](http://localhost:8080).
 
-**On Mobile (iOS/Android):**
-1. Open in Safari (iOS) or Chrome (Android)
-2. Tap Share → Add to Home Screen
-3. App icon appears on home screen
-4. Opens like a native app
+## Tests
 
-## 📁 Project Structure
+```bash
+# Unit tests (Node 18+) — verse/favorites logic
+node --test tests/app-logic.test.js
+
+# Smoke suite (needs the app served on :8080)
+python3 -m http.server 8080 &
+./run-all-tests.sh
+node test-languages-simple.js
+```
+
+CI (GitHub Actions) runs syntax checks, unit tests, JSON validation, and smoke tests on push/PR to `main`.
+
+## Project layout
 
 ```
 daily-proverbs/
-├── index.html              # Main HTML structure
-├── styles.css              # Design system with glassmorphism
-├── app.js                  # Application logic
+├── index.html              # App shell
+├── styles.css              # Design tokens, themes, layout
+├── app.js                  # UI, events, localStorage
+├── app-logic.js            # Pure logic (daily verse, favorites)
+├── translations.js         # UI strings + language metadata
+├── service-worker.js       # Offline + update strategy
 ├── manifest.json           # PWA manifest
-├── service-worker.js       # Offline functionality
 ├── data/
-│   └── proverbs-esv.json  # ESV Proverbs data (31 chapters)
-└── icons/
-    ├── icon-192.png       # App icon (192x192)
-    └── icon-512.png       # App icon (512x512)
+│   ├── proverbs-en.json
+│   ├── proverbs-zh.json
+│   ├── proverbs-es.json
+│   └── proverbs-fr.json
+├── icons/
+├── tests/app-logic.test.js
+├── run-all-tests.sh
+├── test-languages-simple.js
+├── _headers                # Netlify / Cloudflare Pages security headers
+├── vercel.json             # Vercel security headers
+└── demo-materials/         # Demo scripts / screenshot helper
 ```
 
-## 🎨 Design Features
+## Deploy
 
-- **Glassmorphism Effects**: Frosted glass cards with backdrop blur
-- **Vibrant Gradients**: Purple to gold gradient theme
-- **Premium Typography**: Serif fonts for verse text, sans-serif for UI
-- **Smooth Animations**: Fade-in transitions and hover effects
-- **Responsive Layout**: Mobile-first design that scales beautifully
+Any **static HTTPS** host works. Prefer one that applies custom headers so CSP and security headers are sent as HTTP headers (stronger than the HTML meta CSP alone).
 
-## 🛠️ Technologies Used
+| Host | Config in repo |
+|------|----------------|
+| **Vercel** | `vercel.json` |
+| **Netlify** | `_headers` |
+| **Cloudflare Pages** | `_headers` |
+| **GitHub Pages** | **Already enabled** from `main` → [/daily-proverbs/](https://paulusfong.github.io/daily-proverbs/). Does **not** apply `_headers` / `vercel.json` (meta CSP still applies) |
 
-- **HTML5**: Semantic markup
-- **CSS3**: Custom properties, gradients, animations
-- **Vanilla JavaScript**: No frameworks, pure ES6+
-- **Service Workers**: Offline functionality
-- **Web App Manifest**: PWA capabilities
-- **LocalStorage**: Persistent favorites and preferences
+The service worker and manifest use **scope-relative** paths so the app works both at a domain root and under a project subpath (GitHub Pages).
 
-## 📖 Bible Version
+### Suggested flow
 
-This app uses the **English Standard Version (ESV)** of the Bible for all Proverbs verses.
+1. Push to `main` (Pages rebuilds automatically), **or** connect the repo to Vercel/Netlify/Cloudflare Pages for HTTP security headers
+2. Publish the **repo root** (no build step)
+3. Open the production URL over HTTPS
+4. Install as PWA, toggle offline, switch languages once
 
-## 🤝 Contributing
+### Service worker cache versions
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
+`service-worker.js` uses a named cache (e.g. `daily-proverbs-v5`). **Bump the cache name** whenever you ship meaningful asset changes so clients drop old caches and pick up new HTML/JS/data after their next online visit.
 
-## 📄 License
+## Security notes
 
-This project is open source and available under the MIT License.
+- No backend, no secrets, no production runtime dependencies
+- Language codes are whitelisted before loading `data/proverbs-*.json`
+- Verses render via `textContent` / `createElement` (no HTML injection of verse text)
+- CSP: `default-src 'self'`; styles are external only
+- See `SECURITY-AUDIT.md` / `SECURITY-COMPLETE.md` for earlier audit notes
 
-## 🙏 Acknowledgments
+## Contributing
 
-- ESV Bible text
-- Inspired by the wisdom of the Book of Proverbs
-- Built with modern web technologies
+1. Keep changes small and focused
+2. Run unit tests before opening a PR
+3. Prefer PRs into `main` (branch protection may require them)
+4. Bump the service worker `CACHE_NAME` when changing cached assets
 
-## 📱 Screenshots
+## License
 
-### Light Mode
-Beautiful gradient background with glassmorphism card design.
-
-### Dark Mode
-Elegant dark theme with high contrast for comfortable reading.
-
-### Browse Mode
-Explore all 31 chapters of Proverbs in an accessible grid layout.
-
----
-
-**Made with ❤️ for daily inspiration from God's Word**
+Application code is available under the MIT License (see project terms as published). **Bible text is not covered by that license**—follow each translation’s copyright rules.
