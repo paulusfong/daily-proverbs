@@ -79,8 +79,8 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 # Test 2.1: Cache Version
-echo -n "2.1 Cache Version v2... "
-if grep -q "daily-proverbs-v2" service-worker.js; then
+echo -n "2.1 Cache Version v3... "
+if grep -q "daily-proverbs-v3" service-worker.js; then
     echo -e "${GREEN}✓ PASS${NC}"
     CACHE_V2=1
 else

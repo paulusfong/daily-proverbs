@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: JavaScript syntax check
+        run: |
+          node --check app.js
+          node --check service-worker.js
+          node --check translations.js
+          node --check test-languages-simple.js
+
+      - name: Validate language JSON
+        run: |
+          node -e "
+            const fs = require('fs');
+            for (const lang of ['en', 'zh', 'es', 'fr']) {
+              const data = JSON.parse(fs.readFileSync('data/proverbs-' + lang + '.json', 'utf8'));
+              if (!data.book || !data.version || !Array.isArray(data.chapters) || data.chapters.length !== 31) {
+                throw new Error('Invalid structure: ' + lang);
+              }
+              for (const ch of data.chapters) {
+                if (!Array.isArray(ch.verses) || ch.verses.length === 0) {
+                  throw new Error('Empty chapter in ' + lang + ': ' + ch.chapter);
+                }
+              }
+              console.log('OK', lang, data.version, data.chapters.length + ' chapters');
+            }
+          "
+
+      - name: Start static server
+        run: python3 -m http.server 8080 &
+
+      - name: Wait for server
+        run: |
+          for i in $(seq 1 20); do
+            if curl -sf http://localhost:8080/ >/dev/null; then exit 0; fi
+            sleep 0.5
+          done
+          echo "Server failed to start" >&2
+          exit 1
+
+      - name: Security and language smoke tests
+        run: |
+          bash run-all-tests.sh
+          node test-languages-simple.js

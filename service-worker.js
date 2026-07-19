@@ -1,4 +1,4 @@
-const CACHE_NAME = 'daily-proverbs-v2';
+const CACHE_NAME = 'daily-proverbs-v3';
 const urlsToCache = [
     '/',
     '/index.html',

@@ -598,7 +598,19 @@ html[lang="zh-TW"] .verse-reference {
   gap: var(--spacing-md);
 }
 
+.browse-note {
+  color: var(--text-muted);
+  font-size: var(--text-sm);
+  margin: -0.75rem 0 var(--spacing-md);
+  line-height: var(--leading-normal);
+}
+
 .verse-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  color: inherit;
   background: var(--bg-card);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
