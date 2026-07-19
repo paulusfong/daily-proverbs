@@ -1,0 +1,12 @@
+{
+  "name": "daily-proverbs-demo",
+  "version": "1.0.0",
+  "description": "Demo material generator for Daily Proverbs",
+  "main": "create-screenshots.js",
+  "scripts": {
+    "screenshots": "node create-screenshots.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0"
+  }
+}

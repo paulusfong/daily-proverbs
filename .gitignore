@@ -3,3 +3,12 @@ node_modules/
 *.log
 .env
 .vscode/
+
+# Local backups and generated test output
+*.backup
+test-results.json
+test-screenshots/
+demo-materials/screenshots/*.png
+demo-materials/videos/*
+!demo-materials/videos/.gitkeep
+!demo-materials/screenshots/.gitkeep
