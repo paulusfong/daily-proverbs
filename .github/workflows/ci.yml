@@ -21,9 +21,14 @@ jobs:
       - name: JavaScript syntax check
         run: |
           node --check app.js
+          node --check app-logic.js
           node --check service-worker.js
           node --check translations.js
           node --check test-languages-simple.js
+          node --check tests/app-logic.test.js
+
+      - name: Unit tests (app-logic)
+        run: node --test tests/app-logic.test.js
 
       - name: Validate language JSON
         run: |

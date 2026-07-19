@@ -1,5 +1,5 @@
-// Constants
-const VALID_LANGUAGES = ['en', 'zh', 'es', 'fr'];
+// Constants (pure logic lives in app-logic.js → AppLogic)
+const VALID_LANGUAGES = AppLogic.VALID_LANGUAGES;
 const FAVORITES_STORAGE_KEY = 'favorites';
 
 // App State
@@ -13,45 +13,25 @@ let currentLanguage = localStorage.getItem('language') || 'en';
 let favorites = loadFavorites();
 
 // Validate stored language on startup
-if (!VALID_LANGUAGES.includes(currentLanguage)) {
+if (!AppLogic.isValidLanguage(currentLanguage)) {
     console.warn('Invalid language in localStorage:', currentLanguage);
     currentLanguage = 'en';
     localStorage.setItem('language', 'en');
 }
 
-// --- Favorites helpers ---
+// --- Favorites helpers (thin wrappers around AppLogic + localStorage) ---
 
 function loadFavorites() {
     try {
-        const raw = JSON.parse(localStorage.getItem(FAVORITES_STORAGE_KEY) || '[]');
-        if (!Array.isArray(raw)) return [];
-        // Migrate legacy entries (no language) → treat as English
-        return raw.map(normalizeFavorite).filter(Boolean);
+        return AppLogic.parseFavorites(localStorage.getItem(FAVORITES_STORAGE_KEY) || '[]');
     } catch (error) {
         console.warn('Failed to parse favorites; resetting', error);
         return [];
     }
 }
 
-function normalizeFavorite(fav) {
-    if (!fav || typeof fav !== 'object') return null;
-    const chapter = Number(fav.chapter);
-    const verse = Number(fav.verse);
-    if (!Number.isFinite(chapter) || !Number.isFinite(verse) || typeof fav.text !== 'string') {
-        return null;
-    }
-    const language = VALID_LANGUAGES.includes(fav.language) ? fav.language : 'en';
-    return { chapter, verse, text: fav.text, language };
-}
-
-function favoriteKey(fav) {
-    return `${fav.language}:${fav.chapter}:${fav.verse}`;
-}
-
 function isFavorite(verse) {
-    if (!verse) return false;
-    const key = favoriteKey(verse);
-    return favorites.some(fav => favoriteKey(fav) === key);
+    return AppLogic.isFavorite(favorites, verse);
 }
 
 function saveFavorites() {
@@ -59,7 +39,7 @@ function saveFavorites() {
 }
 
 function favoritesForCurrentLanguage() {
-    return favorites.filter(fav => fav.language === currentLanguage);
+    return AppLogic.favoritesForLanguage(favorites, currentLanguage);
 }
 
 // --- i18n helpers ---
@@ -110,7 +90,7 @@ async function init() {
 
 // Change language
 async function changeLanguage(lang) {
-    if (!VALID_LANGUAGES.includes(lang)) {
+    if (!AppLogic.isValidLanguage(lang)) {
         console.warn('Invalid language attempted:', lang);
         return;
     }
@@ -205,41 +185,8 @@ function updateUITranslations() {
     document.documentElement.setAttribute('lang', langMeta.code);
 }
 
-/**
- * Stable daily verse: chapter by day-of-month, verse by deterministic date seed.
- * Same calendar day + language always yields the same verse (no reshuffle on refresh).
- */
 function getTodayVerse() {
-    const today = new Date();
-    const dayOfMonth = today.getDate(); // 1-31
-    const chapterIndex = Math.min(dayOfMonth, 31) - 1;
-    const chapter = proverbsData.chapters[chapterIndex];
-
-    if (!chapter || !Array.isArray(chapter.verses) || chapter.verses.length === 0) {
-        return null;
-    }
-
-    const seed = stableDaySeed(today, currentLanguage);
-    const verseIndex = seed % chapter.verses.length;
-    const verse = chapter.verses[verseIndex];
-
-    return {
-        chapter: chapter.chapter,
-        verse: verse.verse,
-        text: verse.text,
-        language: currentLanguage
-    };
-}
-
-/** Simple deterministic hash from date + language (no Math.random). */
-function stableDaySeed(date, language) {
-    const key = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}:${language}`;
-    let hash = 0;
-    for (let i = 0; i < key.length; i++) {
-        hash = ((hash << 5) - hash) + key.charCodeAt(i);
-        hash |= 0; // 32-bit int
-    }
-    return Math.abs(hash);
+    return AppLogic.getTodayVerse(proverbsData, new Date(), currentLanguage);
 }
 
 function setCurrentVerse(verse) {
@@ -309,20 +256,7 @@ function updateFavoriteButton(verse) {
 function toggleFavorite() {
     if (!currentVerse) return;
 
-    const key = favoriteKey(currentVerse);
-    const existingIndex = favorites.findIndex(fav => favoriteKey(fav) === key);
-
-    if (existingIndex >= 0) {
-        favorites.splice(existingIndex, 1);
-    } else {
-        favorites.push({
-            chapter: currentVerse.chapter,
-            verse: currentVerse.verse,
-            text: currentVerse.text,
-            language: currentVerse.language
-        });
-    }
-
+    favorites = AppLogic.toggleFavoriteInList(favorites, currentVerse);
     saveFavorites();
     updateFavoriteButton(currentVerse);
 

@@ -1,9 +1,10 @@
-const CACHE_NAME = 'daily-proverbs-v3';
+const CACHE_NAME = 'daily-proverbs-v4';
 const urlsToCache = [
     '/',
     '/index.html',
     '/styles.css',
     '/app.js',
+    '/app-logic.js',
     '/translations.js',
     '/data/proverbs-en.json',
     '/data/proverbs-zh.json',

@@ -79,13 +79,21 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 # Test 2.1: Cache Version
-echo -n "2.1 Cache Version v3... "
-if grep -q "daily-proverbs-v3" service-worker.js; then
+echo -n "2.1 Cache Version v4... "
+if grep -q "daily-proverbs-v4" service-worker.js; then
     echo -e "${GREEN}✓ PASS${NC}"
     CACHE_V2=1
 else
     echo -e "${RED}✗ FAIL${NC}"
     CACHE_V2=0
+fi
+
+# Test 2.1b: app-logic.js cached
+echo -n "2.1b app-logic.js in Cache... "
+if grep -q "app-logic.js" service-worker.js; then
+    echo -e "${GREEN}✓ PASS${NC}"
+else
+    echo -e "${RED}✗ FAIL${NC}"
 fi
 
 # Test 2.2: All Language Files Cached

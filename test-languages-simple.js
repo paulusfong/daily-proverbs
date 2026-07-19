@@ -75,6 +75,7 @@ async function runTests() {
     const requiredFiles = [
       '/styles.css',
       '/app.js',
+      '/app-logic.js',
       '/translations.js',
       '/manifest.json',
       '/data/proverbs-en.json',
@@ -221,11 +222,12 @@ async function runTests() {
           'Has init function': /function init|async function init/.test(js),
           'Has changeLanguage function': /function changeLanguage|async function changeLanguage/.test(js),
           'Has updateUITranslations function': /function updateUITranslations/.test(js),
-          'Has language whitelist': /VALID_LANGUAGES/.test(js),
+          'Uses AppLogic': /AppLogic\./.test(js),
           'Has favorites management': /favorites/.test(js) && /localStorage/.test(js),
           'Has theme toggle': /toggleTheme/.test(js),
           'Has service worker registration': /serviceWorker/.test(js)
         };
+
         
         let allChecksPass = true;
         Object.entries(jsChecks).forEach(([check, result]) => {
