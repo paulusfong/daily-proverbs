@@ -664,7 +664,8 @@ html[lang="zh-TW"] .verse-reference {
   font-size: var(--text-base);
 }
 
-/* Favorites View */
+/* View titles (replaces previous inline styles) */
+.view-title,
 .favorites-container h2,
 .browse-container h2 {
   margin-bottom: var(--spacing-lg);

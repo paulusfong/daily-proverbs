@@ -26,9 +26,9 @@ echo "  TEST 1: Security Improvements"
 echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo ""
 
-# Test 1.1: CSP Header
+# Test 1.1: Content Security Policy (no unsafe-inline styles)
 echo -n "1.1 Content Security Policy... "
-if grep -q "Content-Security-Policy" index.html; then
+if grep -q "Content-Security-Policy" index.html && ! grep -q "style-src[^;]*'unsafe-inline'" index.html; then
     echo -e "${GREEN}✓ PASS${NC}"
     CSP_PASS=1
 else
@@ -36,9 +36,18 @@ else
     CSP_PASS=0
 fi
 
-# Test 1.2: Language Validation
+# Test 1.1b: No inline styles in HTML
+echo -n "1.1b No inline style attributes... "
+if ! grep -qE 'style="' index.html; then
+    echo -e "${GREEN}✓ PASS${NC}"
+else
+    echo -e "${RED}✗ FAIL${NC}"
+    CSP_PASS=0
+fi
+
+# Test 1.2: Language Validation (whitelist lives in app-logic.js)
 echo -n "1.2 Language Input Validation... "
-if grep -q "VALID_LANGUAGES" app.js && grep -q "includes(lang)" app.js; then
+if grep -q "VALID_LANGUAGES" app-logic.js && grep -q "isValidLanguage" app.js app-logic.js; then
     echo -e "${GREEN}✓ PASS${NC}"
     VALIDATION_PASS=1
 else
@@ -48,8 +57,9 @@ fi
 
 # Test 1.3: XSS Prevention
 echo -n "1.3 XSS Prevention (textContent)... "
-TEXTCONTENT_COUNT=$(grep -c "textContent" app.js)
-UNSAFE_PATTERNS=$(grep -cE "eval\(|Function\(|innerHTML\s*=\s*[^']" app.js || echo 0)
+TEXTCONTENT_COUNT=$(grep -c "textContent" app.js || true)
+UNSAFE_PATTERNS=$(grep -cE "eval\(|Function\(|innerHTML\s*=" app.js 2>/dev/null || true)
+UNSAFE_PATTERNS=${UNSAFE_PATTERNS:-0}
 if [ "$TEXTCONTENT_COUNT" -gt 10 ] && [ "$UNSAFE_PATTERNS" -eq 0 ]; then
     echo -e "${GREEN}✓ PASS${NC} (textContent: ${TEXTCONTENT_COUNT}x)"
     XSS_PASS=1
@@ -79,8 +89,8 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 # Test 2.1: Cache Version
-echo -n "2.1 Cache Version v4... "
-if grep -q "daily-proverbs-v4" service-worker.js; then
+echo -n "2.1 Cache Version v5... "
+if grep -q "daily-proverbs-v5" service-worker.js; then
     echo -e "${GREEN}✓ PASS${NC}"
     CACHE_V2=1
 else
@@ -88,9 +98,17 @@ else
     CACHE_V2=0
 fi
 
-# Test 2.1b: app-logic.js cached
-echo -n "2.1b app-logic.js in Cache... "
+# Test 2.1b: app-logic.js precached
+echo -n "2.1b app-logic.js in precache... "
 if grep -q "app-logic.js" service-worker.js; then
+    echo -e "${GREEN}✓ PASS${NC}"
+else
+    echo -e "${RED}✗ FAIL${NC}"
+fi
+
+# Test 2.1c: Network-first for HTML/JS
+echo -n "2.1c Network-first for shell assets... "
+if grep -q "networkFirst" service-worker.js && grep -q "isNetworkFirst" service-worker.js; then
     echo -e "${GREEN}✓ PASS${NC}"
 else
     echo -e "${RED}✗ FAIL${NC}"
