@@ -4,16 +4,17 @@
 
 | Host | URL | Security headers |
 |------|-----|------------------|
-| **GitHub Pages** | https://paulusfong.github.io/daily-proverbs/ | Meta CSP only (Pages does not apply `_headers` / `vercel.json`) |
-| **Vercel** (recommended for headers) | Deploy with steps below | Full headers from `vercel.json` |
+| **Vercel (primary)** | https://daily-proverbs-neon.vercel.app/ | Full headers from `vercel.json` (CSP, X-Frame-Options, etc.) |
+| **GitHub Pages (mirror)** | https://paulusfong.github.io/daily-proverbs/ | Meta CSP only (Pages does not apply `_headers` / `vercel.json`) |
 
-GitHub Pages is already publishing from `main` (HTTPS enforced).
+Last verified: live QA **27/27** on Vercel, including **CSP HTTP header** + HSTS.
 
 ## Live QA
 
 ```bash
-./scripts/qa-live.sh
-# or against another host:
+./scripts/qa-live.sh https://daily-proverbs-neon.vercel.app
+./scripts/qa-live.sh https://paulusfong.github.io/daily-proverbs
+# or:
 ./scripts/qa-live.sh https://your-deployment.example
 ```
 

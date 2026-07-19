@@ -2,10 +2,11 @@
 
 A lightweight Progressive Web App that shows a daily verse from the Book of Proverbs, with browse and favorites, offline support, and four languages.
 
-**Live site (GitHub Pages):** [https://paulusfong.github.io/daily-proverbs/](https://paulusfong.github.io/daily-proverbs/)  
+**Production (Vercel):** [https://daily-proverbs-neon.vercel.app/](https://daily-proverbs-neon.vercel.app/)  
+**Mirror (GitHub Pages):** [https://paulusfong.github.io/daily-proverbs/](https://paulusfong.github.io/daily-proverbs/)  
 **Source:** [github.com/paulusfong/daily-proverbs](https://github.com/paulusfong/daily-proverbs)
 
-Deploy notes (Vercel headers, QA script): see [DEPLOY.md](./DEPLOY.md).
+Deploy notes and live QA: see [DEPLOY.md](./DEPLOY.md).
 
 ## Features
 
@@ -58,7 +59,7 @@ python3 -m http.server 8080 &
 node test-languages-simple.js
 
 # Production / live-site smoke
-./scripts/qa-live.sh
+./scripts/qa-live.sh https://daily-proverbs-neon.vercel.app
 ./scripts/qa-live.sh https://paulusfong.github.io/daily-proverbs
 ```
 
