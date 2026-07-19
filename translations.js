@@ -33,7 +33,7 @@ const translations = {
             // Browse View
             selectChapter: 'Select a Chapter',
             selectedVersesNote: 'Selected verses from each chapter (not the full book).',
-            backToChapters: '← Back to Chapters',
+            backToChapters: 'Back to Chapters',
             proverbsChapter: 'Proverbs',
 
             // Favorites View
@@ -86,7 +86,7 @@ const translations = {
             // Browse View
             selectChapter: '选择章节',
             selectedVersesNote: '各章精选经文（非全书全文）。',
-            backToChapters: '← 返回章节',
+            backToChapters: '返回章节',
             proverbsChapter: '箴言',
 
             // Favorites View
@@ -139,7 +139,7 @@ const translations = {
             // Browse View
             selectChapter: 'Seleccionar un Capítulo',
             selectedVersesNote: 'Versículos seleccionados de cada capítulo (no el libro completo).',
-            backToChapters: '← Volver a Capítulos',
+            backToChapters: 'Volver a Capítulos',
             proverbsChapter: 'Proverbios',
 
             // Favorites View
@@ -192,7 +192,7 @@ const translations = {
             // Browse View
             selectChapter: 'Sélectionner un Chapitre',
             selectedVersesNote: 'Versets sélectionnés de chaque chapitre (pas le livre entier).',
-            backToChapters: '← Retour aux Chapitres',
+            backToChapters: 'Retour aux Chapitres',
             proverbsChapter: 'Proverbes',
 
             // Favorites View

@@ -3,109 +3,168 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Daily inspirational verses from the Book of Proverbs (ESV Bible)">
-  <meta name="theme-color" content="#7c3aed">
+  <meta name="description" content="Daily inspirational verses from the Book of Proverbs">
+  <meta name="theme-color" content="#6d28d9">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Daily Proverbs">
-  
-  <title>Daily Proverbs - Inspiration from ESV Bible</title>
-  
+
+  <title>Daily Proverbs</title>
+
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="icons/icon-192.png">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
 <body>
+  <!-- Inline SVG sprite (currentColor icons) -->
+  <svg xmlns="http://www.w3.org/2000/svg" class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-book" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+        d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+        d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+    </symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <rect x="14" y="3" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <rect x="3" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <rect x="14" y="14" width="7" height="7" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.75"/>
+    </symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </symbol>
+    <symbol id="icon-heart-filled" viewBox="0 0 24 24">
+      <path fill="currentColor" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </symbol>
+    <symbol id="icon-share" viewBox="0 0 24 24">
+      <circle cx="18" cy="5" r="3" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <circle cx="6" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <circle cx="18" cy="19" r="3" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+        d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/>
+    </symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.75"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"
+        d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+        d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/>
+    </symbol>
+    <symbol id="icon-chevron-left" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+        d="M15 18l-6-6 6-6"/>
+    </symbol>
+  </svg>
+
   <div class="container">
-    <!-- Header -->
     <header class="header">
       <div class="logo">
-        <img src="icons/icon-192.png" alt="Daily Proverbs" class="logo-icon">
+        <img src="icons/icon-192.png" alt="" class="logo-icon" width="40" height="40">
         <span>Daily Proverbs</span>
       </div>
       <div class="header-actions">
-        <select class="language-selector" id="languageSelector" aria-label="Select language">
-          <option value="en">English</option>
-          <option value="zh">中文</option>
-          <option value="es">Español</option>
-          <option value="fr">Français</option>
-        </select>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <span id="themeIcon">🌙</span>
+        <div class="language-wrap">
+          <select class="language-selector" id="languageSelector" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="zh">中文</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <svg class="icon" id="themeIcon" width="20" height="20" aria-hidden="true">
+            <use href="#icon-moon"></use>
+          </svg>
         </button>
       </div>
     </header>
 
-    <!-- Main Content -->
     <main id="mainContent">
-      <!-- Daily Verse View -->
-      <div id="dailyView" class="daily-container">
+      <div id="dailyView" class="daily-container active">
         <div class="verse-container">
-          <div class="card">
+          <article class="card verse-card" id="verseCard">
             <div class="verse-header">
               <span class="verse-date" id="verseDate">Loading...</span>
               <div class="verse-actions">
-                <button class="icon-btn" id="favoriteBtn" aria-label="Favorite" title="Add to favorites">
-                  ❤️
+                <button class="icon-btn" id="favoriteBtn" type="button" aria-label="Favorite" aria-pressed="false" title="Add to favorites">
+                  <svg class="icon" width="22" height="22" aria-hidden="true">
+                    <use href="#icon-heart" id="favoriteIconUse"></use>
+                  </svg>
                 </button>
-                <button class="icon-btn" id="shareBtn" aria-label="Share" title="Share verse">
-                  📤
+                <button class="icon-btn" id="shareBtn" type="button" aria-label="Share" title="Share verse">
+                  <svg class="icon" width="22" height="22" aria-hidden="true">
+                    <use href="#icon-share"></use>
+                  </svg>
                 </button>
               </div>
             </div>
-            <div class="verse-reference" id="verseReference">Proverbs 1:1</div>
-            <div class="verse-text" id="verseText">Loading verse...</div>
-            <div class="verse-version">ESV</div>
-          </div>
+            <div class="verse-skeleton hidden" id="verseSkeleton" aria-hidden="true">
+              <div class="skeleton-line skeleton-ref"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line"></div>
+              <div class="skeleton-line skeleton-short"></div>
+            </div>
+            <div class="verse-body" id="verseBody">
+              <div class="verse-reference" id="verseReference">Proverbs 1:1</div>
+              <div class="verse-text" id="verseText">Loading verse...</div>
+              <div class="verse-version">ESV</div>
+            </div>
+          </article>
         </div>
       </div>
 
-      <!-- Browse View -->
       <div id="browseView" class="browse-container">
         <div id="chapterSelect">
           <h2 class="view-title">Select a Chapter</h2>
           <p class="browse-note" id="browseNote">Selected verses from each chapter (not the full book).</p>
           <div class="chapter-grid" id="chapterGrid"></div>
         </div>
-        
+
         <div id="verseSelect" class="hidden">
-          <button class="back-btn" id="backToChapters">
-            ← Back to Chapters
+          <button class="back-btn" id="backToChapters" type="button">
+            <svg class="icon" width="18" height="18" aria-hidden="true"><use href="#icon-chevron-left"></use></svg>
+            <span id="backToChaptersLabel">Back to Chapters</span>
           </button>
           <h2 class="view-title" id="chapterTitle">Proverbs 1</h2>
           <div class="verse-list" id="verseList"></div>
         </div>
       </div>
 
-      <!-- Favorites View -->
       <div id="favoritesView" class="favorites-container">
         <h2 class="view-title">Favorite Verses</h2>
         <div id="favoritesList" class="verse-list"></div>
         <div id="emptyFavorites" class="empty-state hidden">
-          <div class="empty-state-icon">❤️</div>
+          <div class="empty-state-icon" aria-hidden="true">
+            <svg class="icon" width="48" height="48"><use href="#icon-heart"></use></svg>
+          </div>
           <div class="empty-state-text">No favorite verses yet.<br>Tap the heart icon to save verses.</div>
         </div>
       </div>
     </main>
 
-    <!-- Navigation -->
-    <nav class="nav">
-      <button class="nav-btn active" data-view="daily" id="navDaily">
-        <span class="nav-btn-icon">📖</span>
+    <nav class="nav" aria-label="Main">
+      <button class="nav-btn active" data-view="daily" id="navDaily" type="button">
+        <svg class="icon nav-btn-icon" width="22" height="22" aria-hidden="true"><use href="#icon-book"></use></svg>
         <span>Today</span>
       </button>
-      <button class="nav-btn" data-view="browse" id="navBrowse">
-        <span class="nav-btn-icon">📚</span>
+      <button class="nav-btn" data-view="browse" id="navBrowse" type="button">
+        <svg class="icon nav-btn-icon" width="22" height="22" aria-hidden="true"><use href="#icon-grid"></use></svg>
         <span>Browse</span>
       </button>
-      <button class="nav-btn" data-view="favorites" id="navFavorites">
-        <span class="nav-btn-icon">❤️</span>
+      <button class="nav-btn" data-view="favorites" id="navFavorites" type="button">
+        <svg class="icon nav-btn-icon" width="22" height="22" aria-hidden="true"><use href="#icon-heart"></use></svg>
         <span>Favorites</span>
       </button>
     </nav>
   </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
 
   <script src="translations.js"></script>
   <script src="app-logic.js"></script>

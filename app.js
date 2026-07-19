@@ -88,6 +88,41 @@ async function init() {
     }
 }
 
+let toastTimer = null;
+
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    if (!toast || !message) return;
+
+    toast.textContent = message;
+    toast.hidden = false;
+    // Force reflow so transition runs when re-showing
+    void toast.offsetWidth;
+    toast.classList.add('is-visible');
+
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+        toast.classList.remove('is-visible');
+        setTimeout(() => {
+            if (!toast.classList.contains('is-visible')) {
+                toast.hidden = true;
+            }
+        }, 250);
+    }, 2400);
+}
+
+function setVerseLoading(isLoading) {
+    const card = document.getElementById('verseCard');
+    if (!card) return;
+    card.classList.toggle('is-loading', Boolean(isLoading));
+}
+
+function setUseHref(useEl, iconId) {
+    if (!useEl) return;
+    useEl.setAttribute('href', iconId);
+    useEl.setAttribute('xlink:href', iconId);
+}
+
 // Change language
 async function changeLanguage(lang) {
     if (!AppLogic.isValidLanguage(lang)) {
@@ -97,6 +132,7 @@ async function changeLanguage(lang) {
 
     currentLanguage = lang;
     localStorage.setItem('language', lang);
+    setVerseLoading(true);
 
     try {
         proverbsData = await loadProverbsData(currentLanguage);
@@ -115,7 +151,9 @@ async function changeLanguage(lang) {
         }
     } catch (error) {
         console.error('Failed to load language data:', error);
-        alert(t('errorLoading'));
+        showToast(t('errorLoading'));
+    } finally {
+        setVerseLoading(false);
     }
 }
 
@@ -156,9 +194,9 @@ function updateUITranslations() {
         browseNote.textContent = t('selectedVersesNote');
     }
 
-    const backBtn = document.getElementById('backToChapters');
-    if (backBtn) {
-        backBtn.textContent = t('backToChapters');
+    const backLabel = document.getElementById('backToChaptersLabel');
+    if (backLabel) {
+        backLabel.textContent = t('backToChapters');
     }
 
     const favoritesHeader = document.querySelector('#favoritesView > h2');
@@ -232,24 +270,23 @@ function displayDailyVerse() {
     showVerse(todayVerse);
 }
 
-// Update favorite button
+// Update favorite button (SVG icon, not emoji)
 function updateFavoriteButton(verse) {
     const favoriteBtn = document.getElementById('favoriteBtn');
     const favorited = isFavorite(verse);
+    const useEl = favoriteBtn.querySelector('use');
 
-    if (favorited) {
-        favoriteBtn.classList.add('active');
-        favoriteBtn.textContent = '❤️';
-        favoriteBtn.setAttribute('title', t('removeFromFavorites'));
-        favoriteBtn.setAttribute('aria-label', t('removeFromFavorites'));
-        favoriteBtn.setAttribute('aria-pressed', 'true');
-    } else {
-        favoriteBtn.classList.remove('active');
-        favoriteBtn.textContent = '🤍';
-        favoriteBtn.setAttribute('title', t('addToFavorites'));
-        favoriteBtn.setAttribute('aria-label', t('addToFavorites'));
-        favoriteBtn.setAttribute('aria-pressed', 'false');
-    }
+    favoriteBtn.classList.toggle('active', favorited);
+    setUseHref(useEl, favorited ? '#icon-heart-filled' : '#icon-heart');
+    favoriteBtn.setAttribute(
+        'title',
+        favorited ? t('removeFromFavorites') : t('addToFavorites')
+    );
+    favoriteBtn.setAttribute(
+        'aria-label',
+        favorited ? t('removeFromFavorites') : t('addToFavorites')
+    );
+    favoriteBtn.setAttribute('aria-pressed', favorited ? 'true' : 'false');
 }
 
 // Toggle favorite from structured currentVerse (never parse DOM)
@@ -291,9 +328,9 @@ async function shareVerse() {
 
 function copyToClipboard(text) {
     navigator.clipboard.writeText(text).then(() => {
-        alert(t('verseCopied'));
+        showToast(t('verseCopied'));
     }).catch(() => {
-        alert(t('copyFailed'));
+        showToast(t('copyFailed'));
     });
 }
 
@@ -301,7 +338,9 @@ function copyToClipboard(text) {
 function applyTheme(newTheme) {
     theme = newTheme;
     document.documentElement.setAttribute('data-theme', theme);
-    document.getElementById('themeIcon').textContent = theme === 'dark' ? '☀️' : '🌙';
+    const themeUse = document.querySelector('#themeIcon use');
+    // In dark mode, offer sun (switch to light); in light mode, offer moon
+    setUseHref(themeUse, theme === 'dark' ? '#icon-sun' : '#icon-moon');
     localStorage.setItem('theme', theme);
 }
 
